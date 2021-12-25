@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu>
+
+<menu id="new menu 1" label="Openbox">
+	<separator label="Openbox"/>
+	<item label="Reconfigure" icon="/home/aidoneus/.icons/Custom-apks/Crayons/backup.png">
+		<action name="Reconfigure"/>
+	</item>
+	<item label="Openbox RC" icon="/home/aidoneus/.icons/Custom-apks/Crayons/notes_2_alt.png">
+		<action name="Execute">
+			<command>gedit .config/openbox/rc.xml</command>
+		</action>
+	</item>
+	<item label="Openbox Autostart" icon="/home/aidoneus/.icons/Custom-apks/Crayons/lockscreen_start.png">
+		<action name="Execute">
+			<command>gedit .config/openbox/autostart</command>
+		</action>
+	</item>
+</menu>
+
+<menu id="root-menu" label="Openbox 3">
+	<separator label="Hey Agus  "/>
+	<item label="Apps" icon="/home/agus/.icons/custom/nexa_iconpack.png">
+		<action name="Execute">
+			<command>rofi -show drun</command>
+		</action>
+	</item>
+	<separator/>
+	<item label="Files" icon="/home/agus/.icons/cherry/64x64/places/folder-pink.svg">
+		<action name="Execute">
+			<command>nautilus</command>
+		</action>
+	</item>
+	<item label="Web" icon="/home/agus/.icons/cherry/24x24/actions/web-browser.svg">
+		<action name="Execute">
+			<command>google-chrome</command>
+		</action>
+	</item>
+	<item label="Terminal" icon="/home/agus/.icons/cherry/24x24/apps/gnome-terminal.svg">
+		<action name="Execute">
+			<command>kitty</command>
+		</action>
+	</item>
+	<separator/>
+	<menu id="new menu 1" icon="/home/agus/.icons/cherry/48x48/apps/gourmet.svg"/>
+	<separator/>
+	<item label="Log Out" icon="/home/agus/.icons/cherry/48x48/apps/gnome-session-hebirnate.svg">
+		<action name="Exit">
+			<prompt>yes</prompt>
+		</action>
+	</item>
+	<item label="Shutdown" icon="/home/agus/.icons/cherry/48x48/apps/gnome-session-halt.svg">
+		<action name="Execute">
+			<command>~/.config/rofi/scripts/powermenu.sh</command>
+		</action>
+	</item>
+</menu>
+
+</openbox_menu>
