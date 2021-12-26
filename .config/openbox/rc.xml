@@ -275,10 +275,10 @@
 #Keybindings for running applications
 
 	<keybind key="W-Return"><action name="Execute"><startupnotify><enabled>true</enabled><name>xfce4-terminal</name></startupnotify><command>xfce4-terminal</command></action></keybind>
-	<keybind key="W-e"><action name="Execute"><startupnotify><enabled>true</enabled><name>thunar</name></startupnotify><command>thunar</command></action></keybind>
+	<keybind key="W-e"><action name="Execute"><startupnotify><enabled>true</enabled><name>nautilus</name></startupnotify><command>nautilus</command></action></keybind>
 	<keybind key="C-A-t"><action name="Execute"><startupnotify><enabled>true</enabled><name>kitty</name></startupnotify><command>kitty</command></action></keybind>
 	<keybind key="W-S-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>reconfigure</name></startupnotify><command>openbox --reconfigure</command></action></keybind>
-	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>firefox</name></startupnotify><command>firefox</command></action></keybind>
+	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome</command></action></keybind>
 	<keybind key="W-v"><action name="Execute"><startupnotify><enabled>true</enabled><name>Vivaldi</name></startupnotify><command>vivaldi-stable</command></action></keybind>
 	<keybind key="W-n"><action name="Execute"><startupnotify><enabled>true</enabled><name>Notion</name></startupnotify><command>notion-app</command></action></keybind>
 	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show window</command></action></keybind>
