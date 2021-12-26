@@ -2,6 +2,8 @@
 
 This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots.git) repository.
 
+*Caveat*: Work in progress :snail:
+
 ## ![#fc8993](https://via.placeholder.com/15/fc8993/000000?text=+)  Configuration
 - OS: Ubuntu 18.04 LTE
 - WM: Openbox
@@ -9,6 +11,8 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 - Shell: ZSH
 - Theme: Bleu Foncé
 - Icons: Cherry
+- Font icons: Icomoon and Fontello
+- FM: Nautilus
 
 
 ![image](resources/rice1.png)
@@ -21,21 +25,29 @@ openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zs
 
 ## ![#fbdf90](https://via.placeholder.com/15/fbdf90/000000?text=+) Keep ricing 
 ### TODO:
-- [ ]  Audio: Check .mpd and .ncmpcpp., cava
+- [ ] Audio: Check .mpd and .ncmpcpp., cava
 - [ ] Add tmux
 - [ ] Add brightness control
 - [ ] Add network control
-- [ ] add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
+- [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
 - [ ] Add bluetooth control
-- [ ] add useful widgets
-- [ ] change neofetch ascii art
-- [ ] configure redshift
+- [ ] Add useful widgets
+- [ ] Change neofetch ascii art
+- [ ] Configure redshift
+- [ ] Custom display manager
 
 ### Backlog:
 - xcompmgr for transparencies?
 
-## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Credits:
+## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
+- Kitty only launches with bash ➔ ZSH is activated via .bashrc.
+
+## ![#d990cd](https://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
+
+<br>
+<br>
+<br>
 
 
 ![#fc8993](https://via.placeholder.com/15/fc8993/000000?text=+)
