@@ -26,6 +26,7 @@ openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zs
 ## ![#fbdf90](https://via.placeholder.com/15/fbdf90/000000?text=+) Keep ricing 
 ### TODO:
 - [x] Add brightness control
+- [x] Configure redshift
 - [ ] Audio: Check .mpd and .ncmpcpp., cava
 - [ ] Add tmux
 - [ ] Add network control
@@ -33,7 +34,6 @@ openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zs
 - [ ] Add bluetooth control
 - [ ] Add useful widgets
 - [ ] Change neofetch ascii art
-- [ ] Configure redshift
 - [ ] Custom display manager
 
 ### Backlog:
