@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# Brightness handler using brightnessctl
+# Brightness handler using xbacklight
 
 function cbright {
-    brightnessctl i | grep '%' | awk -F'(' '{print $2}' | awk -F'%' '{print $1}'
+    xbacklight -get | awk '{print int($1+0.5)}' 
 }
 
 function notify {
@@ -37,18 +37,13 @@ function notify {
 case $1 in
     up)
 	# +5%
-	# brightnessctl set +245 > /dev/null 
-    brightnessctl set +5% > /dev/null
+        xbacklight -inc 5
 	notify
 	;;
     down)
     # -5%
-    brightnessctl set 5%- > /dev/null
+        xbacklight -dec 5
 	notify
 	;;
-    optimal)
-    # Toggle optimal
-	brightnessctl set 25% > /dev/null
-    notify
-	;;
+
 esac    
