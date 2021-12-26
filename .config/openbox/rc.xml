@@ -287,7 +287,7 @@
 -->
 	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons</command></action></keybind>
 	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun</command></action></keybind>
-	<keybind key="W-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>openbox --exit</command></action></keybind>
+	<keybind key="W-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"</command></action></keybind>
 	<keybind key="W-A-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>redshift</name></startupnotify><command>bash -c '~/.local/bin/scripts/redshift_toggle.sh'</command></action></keybind>
 	
 # change keyboard layout 

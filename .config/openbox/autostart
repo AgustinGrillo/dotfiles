@@ -62,8 +62,6 @@ lxpolkit &
 #gnome polkit
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
-# Sessions Lock (time: minute)
-xautolock -time 10 -locker "lxlock" &
 
 # Activate touchpad click
 # (https://simpleit.rocks/linux/ubuntu/activate-single-tap-touchpad-ubuntu/)
@@ -72,5 +70,18 @@ TEMP_TP1_VAR=$(xinput list | grep TouchPad | grep -oP '(?<=id=)..')
 # xinput list-props 14 | grep 'Tapping Enabled (' | awk -F"[()]" '{print $2}'
 TEMP_TP2_VAR=$(xinput list-props $TEMP_TP1_VAR | grep 'Tapping Enabled (' | awk -F"[()]" '{print $2}')
 xinput set-prop $TEMP_TP1_VAR $TEMP_TP2_VAR 1
+
+
+# Screensaver
+# starting screen saver stuff later, nobody needs that after login
+# CREDITS: https://buntu4win.wordpress.com/2015/05/04/how-to-build-a-kick-ass-screen-saverlock-for-openbox/
+# Start GNOME screen saver
+( sleep 30 && gnome-screensaver ) &
+# enable autolock
+#( sleep 30 && xautolock -time 10 -locker "/home/$USER/.local/bin/scripts/screensaver.sh" -corners +0-0 -cornerdelay 15 -cornerredelay 5 -detectsleep ) &
+# disable cappuccino if enabled
+if [ -f "/home/$USER/.config/openbox/cappuccino" ];
+    then rm -f "/home/$USER/.config/openbox/cappuccino" &
+fi
 
 
