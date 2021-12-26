@@ -51,7 +51,7 @@ xfce4-power-manager &
 #xdman &
 
 #redshift
-redshift &
+redshift -c ~/.config/redshift/redshift.conf &
 
 #clipit
 clipit &
@@ -67,8 +67,10 @@ xautolock -time 10 -locker "lxlock" &
 
 # Activate touchpad click
 # (https://simpleit.rocks/linux/ubuntu/activate-single-tap-touchpad-ubuntu/)
-xinput set-prop 14 331 1
-
-
+# xinput list | grep TouchPad | grep -oP '(?<=id=)..' 
+TEMP_TP1_VAR=$(xinput list | grep TouchPad | grep -oP '(?<=id=)..')
+# xinput list-props 14 | grep 'Tapping Enabled (' | awk -F"[()]" '{print $2}'
+TEMP_TP2_VAR=$(xinput list-props $TEMP_TP1_VAR | grep 'Tapping Enabled (' | awk -F"[()]" '{print $2}')
+xinput set-prop $TEMP_TP1_VAR $TEMP_TP2_VAR 1
 
 
