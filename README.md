@@ -29,9 +29,10 @@ scripts mast have executable permissions
 ### TODO:
 - [x] Add brightness control
 - [x] Configure redshift
+- [x] Add Network Manager
+- [x] Add Screen saver
 - [ ] Audio: Check .mpd and .ncmpcpp., cava
 - [ ] Add tmux
-- [ ] Add network control (network-manager-gnome?)
 - [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
 - [ ] Add bluetooth control
 - [ ] Add useful widgets
