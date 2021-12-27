@@ -31,8 +31,8 @@ scripts mast have executable permissions
 - [x] Configure redshift
 - [x] Add Network Manager
 - [x] Add Screen saver
+- [x] Add tmux
 - [ ] Audio: Check .mpd and .ncmpcpp., cava
-- [ ] Add tmux
 - [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
 - [ ] Add bluetooth control
 - [ ] Add useful widgets
