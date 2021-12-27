@@ -20,7 +20,7 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 
 
 ## ![#89e19c](https://via.placeholder.com/15/89e19c/000000?text=+) Dependencies:
-openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zsh, dunst, tint2, redshift, tmux, xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements)
+openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zsh, dunst, tint2, redshift, tmux, xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements), awk, perl, sed
 
 scripts mast have executable permissions
 
@@ -29,9 +29,10 @@ scripts mast have executable permissions
 ### TODO:
 - [x] Add brightness control
 - [x] Configure redshift
+- [x] Add Network Manager
+- [x] Add Screen saver
 - [ ] Audio: Check .mpd and .ncmpcpp., cava
 - [ ] Add tmux
-- [ ] Add network control (network-manager-gnome?)
 - [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
 - [ ] Add bluetooth control
 - [ ] Add useful widgets
