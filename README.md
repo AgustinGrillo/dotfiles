@@ -33,7 +33,8 @@ scripts mast have executable permissions
 - [x] Add Screen saver
 - [x] Add tmux
 - [x] Spotify basic control via panel 
-- [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
+- [x] Change Gedit theme
+- [ ] Add code editor and ide themes (vscode, pycharm)
 - [ ] Spicetify spotify
 - [ ] Add bluetooth control
 - [ ] Add useful widgets
