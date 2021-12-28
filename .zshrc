@@ -107,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.local/bin:$PATH"
 source "$HOME/.cargo/env"
 
-neofetch --source /home/agus/.config/neofetch/art/little_penguin.txt
+#neofetch --source /home/agus/.config/neofetch/art/little_penguin.txt
+neofetch
+
 ############ ROS ###################
 #source /opt/ros/melodic/setup.zsh
