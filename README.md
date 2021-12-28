@@ -20,7 +20,7 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 
 
 ## ![#89e19c](https://via.placeholder.com/15/89e19c/000000?text=+) Dependencies:
-openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zsh, dunst, tint2, redshift, tmux, [tpm](https://github.com/tmux-plugins/tpm), xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements), awk, perl, sed, [playerctl](https://github.com/altdesktop/playerctl)
+openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zsh, dunst, tint2, redshift, tmux, [tpm](https://github.com/tmux-plugins/tpm), xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements), awk, perl, sed, [playerctl](https://github.com/altdesktop/playerctl), gedit, gedit-plugins, spotify
 
 scripts mast have executable permissions
 
@@ -32,13 +32,15 @@ scripts mast have executable permissions
 - [x] Add Network Manager
 - [x] Add Screen saver
 - [x] Add tmux
-- [ ] Audio: Check .mpd and .ncmpcpp., cava
-- [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
-- [ ] Add bluetooth control
-- [ ] Add useful widgets
-- [ ] Change neofetch ascii art
-- [ ] Custom display manager
+- [x] Spotify basic control via panel 
+- [x] Change Gedit theme
 - [ ] Add multi-display capability
+- [ ] Add bluetooth control
+- [ ] Custom display manager
+- [ ] Change neofetch ascii art
+- [ ] Add code editor and ide themes (vscode, pycharm)
+- [ ] Add useful widgets
+- [ ] Spicetify spotify
 
 ### Backlog:
 - xcompmgr for transparencies?
