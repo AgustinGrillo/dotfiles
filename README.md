@@ -34,10 +34,10 @@ scripts mast have executable permissions
 - [x] Add tmux
 - [x] Spotify basic control via panel 
 - [x] Change Gedit theme
+- [x] Change neofetch art
 - [ ] Add multi-display capability
 - [ ] Add bluetooth control
 - [ ] Custom display manager
-- [ ] Change neofetch ascii art
 - [ ] Add code editor and ide themes (vscode, pycharm)
 - [ ] Add useful widgets
 - [ ] Spicetify spotify
