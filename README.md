@@ -32,8 +32,9 @@ scripts mast have executable permissions
 - [x] Add Network Manager
 - [x] Add Screen saver
 - [x] Add tmux
-- [ ] Audio: Check .mpd and .ncmpcpp., cava
+- [x] Spotify basic control via panel 
 - [ ] Add code editor and ide themes (gedit, vscode, pycharm, etc, (vim for terminal (?))
+- [ ] Spicetify spotify
 - [ ] Add bluetooth control
 - [ ] Add useful widgets
 - [ ] Change neofetch ascii art
