@@ -38,6 +38,7 @@ scripts mast have executable permissions
 - [ ] Add useful widgets
 - [ ] Change neofetch ascii art
 - [ ] Custom display manager
+- [ ] Add multi-display capability
 
 ### Backlog:
 - xcompmgr for transparencies?
