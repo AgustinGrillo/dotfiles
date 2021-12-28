@@ -4,8 +4,8 @@ CURRENT_MUSICPL=
 
 if [ "$(pgrep mpd)" ] && [ "$(pgrep spotify)" ]
 then
-    killall spotify
-    CURRENT_MUSICPL='mpd'
+    killall mpd
+    CURRENT_MUSICPL='spotify'
 elif [[ "$(pgrep mpd)" ]]
 then 
     CURRENT_MUSICPL='mpd'
@@ -38,7 +38,7 @@ else
         stop=""
         next=""
         status=""
-        title="No music playing"
+        title=""
     fi
 fi
 
@@ -46,19 +46,46 @@ status="$($status)"
 
 case $1 in
     icon)
-        if [[ $status = *"playing"* ]]; then
-            echo 
-        elif [[ $status = *"paused"* ]]; then
-			echo 
-		else
-            echo 
+        if [[ $status = *"laying"* ]]; then
+            echo  "	"
+        elif [[ $status = *"aused"* ]]; then
+	    echo  "	"
+	else
+            echo  
         fi
     ;;
+
+    prev_icon)
+        if [[ $status = *"laying"* ]]; then
+            echo ᐊ "	"
+        elif [[ $status = *"aused"* ]]; then
+	    echo ᐊ "	"
+	else
+            echo ""
+        fi
+    ;;
+
+    next_icon)
+        if [[ $status = *"laying"* ]]; then
+            echo ᐅ  "	"
+        elif [[ $status = *"aused"* ]]; then
+	    echo ᐅ  "	"
+	else
+            echo ""
+        fi
+    ;;
+
     prev)
         bash -c "$prev"
     ;;
     toggle)
-        bash -c "$toggle"
+	if [[ $status = *"laying"* ]]; then
+            bash -c "$toggle"
+	elif [[ $status = *"aused"* ]]; then
+	    bash -c "$toggle"
+	else
+ 	    "spotify"
+	fi
     ;;
     stop)
         bash -c "$stop"
@@ -80,9 +107,9 @@ case $1 in
     separator)
         # For separator
        if [[ $status = *"laying"* ]]; then
-            echo " music_controller_1 "
+            echo " ~ "
         elif [[ $status = *"aused"* ]]; then
-			echo " music_controller_2 "
+			echo " ~ "
 		else
             echo ""
         fi
