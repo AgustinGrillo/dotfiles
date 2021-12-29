@@ -200,15 +200,16 @@
   <keybind key="C-A-Right"><action name="GoToDesktop"><to>right</to><wrap>no</wrap></action></keybind>
   <keybind key="C-A-Up"><action name="GoToDesktop"><to>up</to><wrap>no</wrap></action></keybind>
   <keybind key="C-A-Down"><action name="GoToDesktop"><to>down</to><wrap>no</wrap></action></keybind>
-  
+  <keybind key="W-S-Left"><action name="SendToDesktop"><to>left</to></action></keybind>
+  <keybind key="W-S-Right"><action name="SendToDesktop"><to>right</to></action></keybind>
   
 # Window Switching
   
   <keybind key="W-d"><action name="ToggleShowDesktop"/></keybind>
   <keybind key="W-q"><action name="Close"/></keybind>
   <keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind>
-  <keybind key="W-Up"><action name="ToggleMaximize"/></keybind>
-  <keybind key="W-Down"><action name="Minimize"/><action name="Minimize"/><action name="Iconify"/></keybind>
+  <keybind key="W-S-Up"><action name="ToggleMaximize"/></keybind>
+  <keybind key="W-S-Down"><action name="Minimize"/><action name="Minimize"/><action name="Iconify"/></keybind>
   <keybind key="W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
   <keybind key="W-A-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
   <keybind key="A-Tab"><action name="NextWindow"><finalactions><action name="Focus"/><action name="Raise"/><action name="Unshade"/></finalactions></action></keybind>
@@ -260,7 +261,11 @@
 <!-- Window Tiling -->
 
     <keybind key="W-Left"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>+-0</x></action></keybind>
-    <keybind key="W-Right"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>-0</x></action></keybind>    
+    <keybind key="W-Right"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>-0</x></action></keybind>   
+<!--    <keybind key="W-Left"><action name="Unmaximize"/><action name="MoveResizeTo"><width>50%</width><x>0</x></action></keybind> -->
+<!--    <keybind key="W-Right"><action name="Unmaximize"/><action name="MoveResizeTo"><width>50%</width><x>-0</x></action></keybind> -->
+    <keybind key="W-Up"><action name="Unmaximize"/><action name="MoveResizeTo"><height>50%</height><y>0</y></action></keybind> 
+    <keybind key="W-Down"><action name="Unmaximize"/><action name="MoveResizeTo"><height>50%</height><y>-0</y></action></keybind> 
     <keybind key="W-C-a"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>+-0</x><y>+-0</y></action></keybind>
     <keybind key="W-C-z"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>+-0</x><y>-0</y></action></keybind>
     <keybind key="W-C-s"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>-0</x><y>+-0</y></action></keybind>
@@ -762,6 +767,10 @@
 
   # end of the example
     -->
+  <application type="normal">
+    <maximized>false</maximized>
+    <decor>no</decor>
+  </application>
     <application title="Mozilla Firefox">
       <decor>no</decor>
     </application>
