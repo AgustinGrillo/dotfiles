@@ -39,6 +39,9 @@ tint2 -c ~/.config/tint2/pills-mpd.tint2rc &
 tint2 -c ~/.config/tint2/pills-power.tint2rc &
 tint2 -c ~/.config/tint2/pills-apps.tint2rc &
 
+# Notification daemon
+dunst
+
 
 #power-manager
 xfce4-power-manager &
