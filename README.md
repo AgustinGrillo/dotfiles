@@ -45,7 +45,7 @@ scripts mast have executable permissions
 - [ ] Spicetify spotify
 
 ### Backlog:
-- xcompmgr for transparencies?
+- xcompmgr/picom for transparencies?
 
 ## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
 - Kitty only launches with bash ➔ ZSH is activated via .bashrc.
