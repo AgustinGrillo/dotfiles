@@ -35,7 +35,7 @@ fi
 cachedir=~/.cache/tldr # Or whatever else the location of the tldr cache is
 complete -W "$(q=($cachedir/*/*); sed 's@\.md @ @g' <<<${q[@]##*/})" tldr
 
-source "$HOME/.cargo/env"
+#source "$HOME/.cargo/env"
 
 # Change nautilus theme
 # alias nautilus='GTK_THEME=phocus nautilus'
@@ -43,4 +43,3 @@ source "$HOME/.cargo/env"
 zsh
 source ~/.zshrc
 
-. "$HOME/.cargo/env"

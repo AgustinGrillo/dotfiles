@@ -105,7 +105,7 @@ source $ZSH/oh-my-zsh.sh
 ### Additions ###
 
 export PATH="$HOME/.local/bin:$PATH"
-source "$HOME/.cargo/env"
+#source "$HOME/.cargo/env"
 
 #neofetch --source /home/agus/.config/neofetch/art/little_penguin.txt
 neofetch
