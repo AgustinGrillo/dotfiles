@@ -36,9 +36,9 @@ scripts mast have executable permissions
 - [x] Spotify basic control via panel 
 - [x] Change Gedit theme
 - [x] Change neofetch art
+- [x] Add bluetooth manager
 - [ ] Customize vim and neovim configs
 - [ ] Add multi-display capability
-- [ ] Add bluetooth control
 - [ ] Custom display manager
 - [ ] Add code editor and ide themes (vscode, pycharm)
 - [ ] Add useful widgets
