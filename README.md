@@ -38,14 +38,14 @@ scripts mast have executable permissions
 - [x] Change neofetch art
 - [x] Add bluetooth manager
 - [ ] Customize vim and neovim configs
-- [ ] Add multi-display capability
+- [ ] Add multi-display capability (arandr)
 - [ ] Custom display manager
 - [ ] Add code editor and ide themes (vscode, pycharm)
 - [ ] Add useful widgets
 - [ ] Spicetify spotify
 
 ### Backlog:
-- xcompmgr/picom for transparencies?
+- xcompmgr/picom for transparencies and/or shadows?
 
 ## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
 - Kitty only launches with bash ➔ ZSH is activated via .bashrc.
