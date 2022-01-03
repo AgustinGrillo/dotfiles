@@ -47,9 +47,9 @@ status="$($status)"
 case $1 in
     icon)
         if [[ $status = *"laying"* ]]; then
-            echo  "	"
+            echo 
         elif [[ $status = *"aused"* ]]; then
-	    echo  "	"
+	    echo 
 	else
             echo  
         fi
@@ -57,9 +57,9 @@ case $1 in
 
     prev_icon)
         if [[ $status = *"laying"* ]]; then
-            echo ᐊ "	"
+            echo ᐊ 
         elif [[ $status = *"aused"* ]]; then
-	    echo ᐊ "	"
+	    echo ᐊ 
 	else
             echo ""
         fi
@@ -67,9 +67,9 @@ case $1 in
 
     next_icon)
         if [[ $status = *"laying"* ]]; then
-            echo ᐅ  "	"
+            echo ᐅ  "  "
         elif [[ $status = *"aused"* ]]; then
-	    echo ᐅ  "	"
+	    echo ᐅ  "  "
 	else
             echo ""
         fi
@@ -107,9 +107,9 @@ case $1 in
     separator)
         # For separator
        if [[ $status = *"laying"* ]]; then
-            echo " ~ "
+            echo "~"
         elif [[ $status = *"aused"* ]]; then
-			echo " ~ "
+			echo "~"
 		else
             echo ""
         fi
