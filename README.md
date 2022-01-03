@@ -15,13 +15,13 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 - FM: Nautilus
 
 
-![image](resources/rice_v1_1.png)
-![image](resources/rice_v1_2.png)
-
+![image](resources/blue_pastel_1.png)
+![image](resources/blue_pastel_2.png)
+![image](resources/blue_pastel_3.png)
 
 
 ## ![#89e19c](https://via.placeholder.com/15/89e19c/000000?text=+) Dependencies:
-openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zsh, oh-my-zsh, dunst, tint2, redshift, tmux, [tpm](https://github.com/tmux-plugins/tpm), xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements; [link](https://stackoverflow.com/questions/59389831/cannot-import-name-gi) for possible bug), [rofi-bluetooth](https://github.com/nickclyde/rofi-bluetooth), awk, perl, sed, [playerctl](https://github.com/altdesktop/playerctl) (useful [link](https://askubuntu.com/questions/1080671/how-can-i-install-playerctl)), gedit, gedit-plugins, spotify, pulseaudio volume control, neofetch (>=v7.0), zathura, [bat](https://github.com/sharkdp/bat), vim, neovim
+openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zsh, oh-my-zsh, dunst, tint2, redshift, tmux, [tpm](https://github.com/tmux-plugins/tpm), xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements; [link](https://stackoverflow.com/questions/59389831/cannot-import-name-gi) for possible bug), [rofi-bluetooth](https://github.com/nickclyde/rofi-bluetooth), awk, perl, sed, [playerctl](https://github.com/altdesktop/playerctl) (useful [link](https://askubuntu.com/questions/1080671/how-can-i-install-playerctl)), gedit, gedit-plugins, spotify, pulseaudio volume control, neofetch (>=v7.0), zathura, [bat](https://github.com/sharkdp/bat), vim, neovim, [picom](https://github.com/yshui/picom)
 
 scripts mast have executable permissions
 
@@ -37,6 +37,8 @@ scripts mast have executable permissions
 - [x] Change Gedit theme
 - [x] Change neofetch art
 - [x] Add bluetooth manager
+- [x] Add rounded corners and shadows
+- [ ] Add taskbar to panel
 - [ ] Customize vim and neovim configs
 - [ ] Add multi-display capability (arandr)
 - [ ] Custom display manager
