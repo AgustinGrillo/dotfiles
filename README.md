@@ -37,6 +37,8 @@ scripts mast have executable permissions
 - [x] Change Gedit theme
 - [x] Change neofetch art
 - [x] Add bluetooth manager
+- [ ] Add taskbar to panel
+- [ ] Add rounded corners and shadows
 - [ ] Customize vim and neovim configs
 - [ ] Add multi-display capability (arandr)
 - [ ] Custom display manager
