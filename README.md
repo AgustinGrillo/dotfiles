@@ -15,9 +15,9 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 - FM: Nautilus
 
 
-![image](resources/rice_v1_1.png)
-![image](resources/rice_v1_2.png)
-
+![image](resources/blue_pastel_1.png)
+![image](resources/blue_pastel_2.png)
+![image](resources/blue_pastel_3.png)
 
 
 ## ![#89e19c](https://via.placeholder.com/15/89e19c/000000?text=+) Dependencies:
