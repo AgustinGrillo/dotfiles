@@ -25,6 +25,11 @@ openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zs
 
 scripts mast have executable permissions
 
+Set compose key with 
+```sh
+$ setxkbmap -option compose:caps
+```
+
 
 ## ![#fbdf90](https://via.placeholder.com/15/fbdf90/000000?text=+) Keep ricing 
 ### TODO:
