@@ -43,9 +43,9 @@ $ setxkbmap -option compose:caps
 - [x] Change neofetch art
 - [x] Add bluetooth manager
 - [x] Add rounded corners and shadows
+- [x] Add multi-display capability (arandr)
 - [ ] Add taskbar to panel
 - [ ] Customize vim and neovim configs
-- [ ] Add multi-display capability (arandr)
 - [ ] Custom display manager
 - [ ] Add code editor and ide themes (vscode, pycharm)
 - [ ] Add useful widgets
@@ -56,6 +56,7 @@ $ setxkbmap -option compose:caps
 
 ## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
 - Kitty only launches with bash ➔ ZSH is activated via .bashrc.
+- Picom compositor crashes with multihead configuration.
 
 ## ![#d990cd](https://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
