@@ -23,6 +23,9 @@ xrandr --output DP-0 --off --output DVI-D-0 --primary --mode 1920x1080 --pos    
 # nitrogen 
 nitrogen --restore &
 
+# Set compose key
+setxkbmap -option compose:caps
+
 
 #Tint2	
 tint2 &
