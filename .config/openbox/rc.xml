@@ -121,14 +121,21 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>10</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name> Ⅰ</name>
-      <name> Ⅱ</name>
-      <name> Ⅲ</name>
+      <name> 1</name>
+      <name> 2</name>
+      <name> 3</name>
+      <name> 4</name>
+      <name> 5</name>
+      <name> 6</name>
+      <name> 7</name>
+      <name> 8</name>
+      <name> 9</name>
+      <name> 10</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -192,6 +199,12 @@
   <keybind key="W-2"><action name="GoToDesktop"><to>2</to></action></keybind>
   <keybind key="W-3"><action name="GoToDesktop"><to>3</to></action></keybind>
   <keybind key="W-4"><action name="GoToDesktop"><to>4</to></action></keybind>
+  <keybind key="W-5"><action name="GoToDesktop"><to>5</to></action></keybind>
+  <keybind key="W-6"><action name="GoToDesktop"><to>6</to></action></keybind>
+  <keybind key="W-7"><action name="GoToDesktop"><to>7</to></action></keybind>
+  <keybind key="W-8"><action name="GoToDesktop"><to>8</to></action></keybind>
+  <keybind key="W-9"><action name="GoToDesktop"><to>9</to></action></keybind>
+  <keybind key="W-0"><action name="GoToDesktop"><to>10</to></action></keybind>
   <keybind key="W-S-1"><action name="SendToDesktop"><to>1</to></action></keybind>
   <keybind key="W-S-2"><action name="SendToDesktop"><to>2</to></action></keybind>
   <keybind key="W-S-3"><action name="SendToDesktop"><to>3</to></action></keybind>
@@ -767,10 +780,10 @@
 
   # end of the example
     -->
-  <application type="normal">
-    <maximized>false</maximized>
-    <decor>no</decor>
-  </application>
+    <application type="normal">
+      <maximized>false</maximized>
+      <decor>no</decor>
+    </application>
     <application title="Mozilla Firefox">
       <decor>no</decor>
     </application>
