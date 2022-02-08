@@ -20,9 +20,6 @@ nitrogen --restore &
 # Compositor
 picom -f &
 
-# Set compose key
-setxkbmap -option compose:caps
-
 
 #Tint2	
 tint2 &
