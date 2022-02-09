@@ -49,7 +49,7 @@ redshift -c ~/.config/redshift/redshift.conf &
 clipit &
 
 # Add compose key
-setxkbmap -option compose:caps
+setxkbmap -option compose:caps &
 
 
 # Activate touchpad click
