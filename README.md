@@ -25,11 +25,6 @@ openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, rofi, kitty, zs
 
 scripts must have executable permissions
 
-Set compose key with 
-```sh
-$ setxkbmap -option compose:caps
-```
-
 
 ## ![#fbdf90](https://via.placeholder.com/15/fbdf90/000000?text=+) Keep ricing 
 ### TODO:
@@ -43,7 +38,7 @@ $ setxkbmap -option compose:caps
 - [x] Change neofetch art
 - [x] Add bluetooth manager
 - [x] Add rounded corners and shadows
-- [x] Add multi-display capability (arandr)
+- [x] Add multi-display capability (xorg.conf)
 - [ ] Add taskbar to panel
 - [ ] Customize vim and neovim configs
 - [ ] Custom display manager
@@ -54,9 +49,11 @@ $ setxkbmap -option compose:caps
 ### Backlog:
 - xcompmgr/picom for transparencies and/or shadows?
 
-## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
+## ![#a7bdfb](https://via.placeholder.com/15/a7bdfb/000000?text=+) Bugs:
+### Known:
 - Kitty only launches with bash ➔ ZSH is activated via .bashrc.
-- Picom compositor crashes with multihead configuration.
+### Solved:
+- Picom compositor crashes with multihead configuration → Use xorg.conf instead of xrandr.
 
 ## ![#d990cd](https://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
