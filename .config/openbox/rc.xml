@@ -124,9 +124,17 @@
     <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name> Ⅰ</name>
-      <name> Ⅱ</name>
-      <name> Ⅲ</name>
+      <name> 1</name>
+      <name> 2</name>
+      <name> 3</name>
+      <name> 4</name>
+      <name> 5</name>
+      <name> 6</name>
+      <name> 7</name>
+      <name> 8</name>
+      <name> 9</name>
+      <name> 10</name>
+      
     </names>
     <popupTime>0</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -192,10 +200,22 @@
   <keybind key="W-2"><action name="GoToDesktop"><to>2</to></action></keybind>
   <keybind key="W-3"><action name="GoToDesktop"><to>3</to></action></keybind>
   <keybind key="W-4"><action name="GoToDesktop"><to>4</to></action></keybind>
+  <keybind key="W-5"><action name="GoToDesktop"><to>5</to></action></keybind>
+  <keybind key="W-6"><action name="GoToDesktop"><to>6</to></action></keybind>
+  <keybind key="W-7"><action name="GoToDesktop"><to>7</to></action></keybind>
+  <keybind key="W-8"><action name="GoToDesktop"><to>8</to></action></keybind>
+  <keybind key="W-9"><action name="GoToDesktop"><to>9</to></action></keybind>
+  <keybind key="W-0"><action name="GoToDesktop"><to>10</to></action></keybind>
   <keybind key="W-S-1"><action name="SendToDesktop"><to>1</to></action></keybind>
   <keybind key="W-S-2"><action name="SendToDesktop"><to>2</to></action></keybind>
   <keybind key="W-S-3"><action name="SendToDesktop"><to>3</to></action></keybind>
   <keybind key="W-S-4"><action name="SendToDesktop"><to>4</to></action></keybind>
+  <keybind key="W-S-5"><action name="SendToDesktop"><to>5</to></action></keybind>
+  <keybind key="W-S-6"><action name="SendToDesktop"><to>6</to></action></keybind>
+  <keybind key="W-S-7"><action name="SendToDesktop"><to>7</to></action></keybind>
+  <keybind key="W-S-8"><action name="SendToDesktop"><to>8</to></action></keybind>
+  <keybind key="W-S-9"><action name="SendToDesktop"><to>9</to></action></keybind>
+  <keybind key="W-S-0"><action name="SendToDesktop"><to>10</to></action></keybind>
   <keybind key="C-A-Left"><action name="GoToDesktop"><to>left</to><wrap>no</wrap></action></keybind>
   <keybind key="C-A-Right"><action name="GoToDesktop"><to>right</to><wrap>no</wrap></action></keybind>
   <keybind key="C-A-Up"><action name="GoToDesktop"><to>up</to><wrap>no</wrap></action></keybind>
