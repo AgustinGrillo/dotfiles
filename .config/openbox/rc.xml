@@ -121,7 +121,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>10</number>
     <firstdesk>1</firstdesk>
     <names>
       <name> 1</name>
@@ -134,9 +134,8 @@
       <name> 8</name>
       <name> 9</name>
       <name> 10</name>
-      
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -787,10 +786,10 @@
 
   # end of the example
     -->
-  <application type="normal">
-    <maximized>false</maximized>
-    <decor>no</decor>
-  </application>
+    <application type="normal">
+      <maximized>false</maximized>
+      <decor>no</decor>
+    </application>
     <application title="Mozilla Firefox">
       <decor>no</decor>
     </application>
