@@ -3,18 +3,19 @@
 * {
   /* General */
   //text-font:                            "Rec Mono Casual 9";
-  icon-font:                            "feather 10";
+  icon-font:                            "Rec Mono Casual 10";
   
-  option-6-listview-spacing:            0px;
-  menu-window-padding:                  6px;
-  menu-element-padding:                 8px 50px;
+  option-6-listview-spacing:            5px;
+  menu-window-padding:                  20px 20px;
+  menu-element-padding:                 10px 40px;
 }
 
 #window {
   width: 8%;
+  height: 12%;
   location: northeast;
-  x-offset: -120px;
-  y-offset: 4%;
+  x-offset: -200px;
+  y-offset: 4.5%;
   border: 5px;
   border-color: @border;
 }
