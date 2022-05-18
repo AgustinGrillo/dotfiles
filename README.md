@@ -40,6 +40,7 @@ scripts must have executable permissions
 - [x] Add rounded corners and shadows
 - [x] Add multi-display capability (arandr)
 - [x] Change screensaver (blued image) after suspend.
+- [ ] Fix power prompt
 - [ ] Change nautilus config, to launch specific terminal instead gnome-terminal.
 - [ ] Add taskbar to panel
 - [ ] Customize vim and neovim configs
