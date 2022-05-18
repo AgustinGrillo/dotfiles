@@ -30,25 +30,29 @@ rm $screen1
 gsettings set org.gnome.desktop.background picture-uri "file://$screen2" 2> /dev/null
 # lock screen using gnome-screensaver
 exec gnome-screensaver-command -l &
-# lets wait a bit before switching off the screen
-sleep 10
-# next lets get the state of the screen saver, if still active, switch off the screen
-bla="The screensaver is inactive"
-state=`gnome-screensaver-command -q`
-if [ "$state" != "$bla" ]; then
-    # turn off display
-    xset dpms 0 0 1; sleep 2
-    # make display turn off automatically after 20 sec
-    xset dpms 0 0 20
-else
-    exit
-fi
 
-# lets keep the script running in background until the screen saver gets switched off
-# in other words: until you login. basically, it does nothing, most of the time it sleeps
-while [ "$state" != "$bla" ]; do
-    sleep 5
-    state=`gnome-screensaver-command -q`
-done
-# set display to not turn off automatically
-xset dpms 0 0 0
+
+# Note: (!) xset makes pc run hot when display is off.
+
+# # lets wait a bit before switching off the screen
+# sleep 10
+# # next lets get the state of the screen saver, if still active, switch off the screen
+# bla="The screensaver is inactive"
+# state=`gnome-screensaver-command -q`
+# if [ "$state" != "$bla" ]; then
+#     # turn off display
+#     xset dpms 0 0 1; sleep 2
+#     # make display turn off automatically after 20 sec
+#     xset dpms 0 0 20
+# else
+#     exit
+# fi
+
+# # lets keep the script running in background until the screen saver gets switched off
+# # in other words: until you login. basically, it does nothing, most of the time it sleeps
+# while [ "$state" != "$bla" ]; do
+#     sleep 5
+#     state=`gnome-screensaver-command -q`
+# done
+# # set display to not turn off automatically
+# xset dpms 0 0 0
