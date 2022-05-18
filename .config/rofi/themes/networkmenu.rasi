@@ -23,7 +23,7 @@ configuration {
 * {
   bg: #1d212a;
   fg: #e3e3e3;
-  accent: #d89495;
+  accent: #fb9199;
   button: #a7bdfb;
   background-color: @bg;
   text-color: @fg;
@@ -36,8 +36,8 @@ window {
   border:6px;
   border-color:#272c38;
   location: northeast;
-  x-offset: -50px;
-  y-offset: 4%;
+  x-offset: -54px;
+  y-offset: 4.5%;
   width: 20%;
   height: 40%;
 }
