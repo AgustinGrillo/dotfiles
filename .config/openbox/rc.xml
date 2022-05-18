@@ -115,20 +115,25 @@
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
        during a session
-
        these are default values to use when other ones are not already set
        by other applications, or saved in your session
-
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>10</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name> Ⅰ</name>
-      <name> Ⅱ</name>
-      <name> Ⅲ</name>
+      <name> 1</name>
+      <name> 2</name>
+      <name> 3</name>
+      <name> 4</name>
+      <name> 5</name>
+      <name> 6</name>
+      <name> 7</name>
+      <name> 8</name>
+      <name> 9</name>
+      <name> 10</name>
     </names>
-    <popupTime>0</popupTime>
+    <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
   </desktops>
@@ -192,10 +197,22 @@
   <keybind key="W-2"><action name="GoToDesktop"><to>2</to></action></keybind>
   <keybind key="W-3"><action name="GoToDesktop"><to>3</to></action></keybind>
   <keybind key="W-4"><action name="GoToDesktop"><to>4</to></action></keybind>
+  <keybind key="W-5"><action name="GoToDesktop"><to>5</to></action></keybind>
+  <keybind key="W-6"><action name="GoToDesktop"><to>6</to></action></keybind>
+  <keybind key="W-7"><action name="GoToDesktop"><to>7</to></action></keybind>
+  <keybind key="W-8"><action name="GoToDesktop"><to>8</to></action></keybind>
+  <keybind key="W-9"><action name="GoToDesktop"><to>9</to></action></keybind>
+  <keybind key="W-0"><action name="GoToDesktop"><to>10</to></action></keybind>
   <keybind key="W-S-1"><action name="SendToDesktop"><to>1</to></action></keybind>
   <keybind key="W-S-2"><action name="SendToDesktop"><to>2</to></action></keybind>
   <keybind key="W-S-3"><action name="SendToDesktop"><to>3</to></action></keybind>
   <keybind key="W-S-4"><action name="SendToDesktop"><to>4</to></action></keybind>
+  <keybind key="W-S-5"><action name="SendToDesktop"><to>5</to></action></keybind>
+  <keybind key="W-S-6"><action name="SendToDesktop"><to>6</to></action></keybind>
+  <keybind key="W-S-7"><action name="SendToDesktop"><to>7</to></action></keybind>
+  <keybind key="W-S-8"><action name="SendToDesktop"><to>8</to></action></keybind>
+  <keybind key="W-S-9"><action name="SendToDesktop"><to>9</to></action></keybind>
+  <keybind key="W-S-0"><action name="SendToDesktop"><to>10</to></action></keybind>
   <keybind key="C-A-Left"><action name="GoToDesktop"><to>left</to><wrap>no</wrap></action></keybind>
   <keybind key="C-A-Right"><action name="GoToDesktop"><to>right</to><wrap>no</wrap></action></keybind>
   <keybind key="C-A-Up"><action name="GoToDesktop"><to>up</to><wrap>no</wrap></action></keybind>
@@ -286,13 +303,14 @@
 	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome</command></action></keybind>
 	<keybind key="W-v"><action name="Execute"><startupnotify><enabled>true</enabled><name>Vivaldi</name></startupnotify><command>vivaldi-stable</command></action></keybind>
 	<keybind key="W-n"><action name="Execute"><startupnotify><enabled>true</enabled><name>Notion</name></startupnotify><command>notion-app</command></action></keybind>
-	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show window</command></action></keybind>
+	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show windowcd -show-icons -window-thumbnail -modi windowcd</command></action></keybind>
 <!--
 	<keybind key="A-space"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun</command></action></keybind>
 -->
 	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons</command></action></keybind>
 	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun</command></action></keybind>
 	<keybind key="W-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"</command></action></keybind>
+	<keybind key="W-S-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>suspend</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"</command></action></keybind>
 	<keybind key="W-A-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>redshift</name></startupnotify><command>bash -c '~/.local/bin/scripts/redshift_toggle.sh'</command></action></keybind>
 	
 # change keyboard layout 
@@ -677,7 +695,6 @@
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
-
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
           groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)"
@@ -688,27 +705,19 @@
                       (if unspecified, then it is 'dialog' for child windows)">
   # you may set only one of name/class/role/title/type, or you may use more
   # than one together to restrict your matches.
-
   # the name, class, role, and title use simple wildcard matching such as those
   # used by a shell. you can use * to match any characters and ? to match
   # any single character.
-
   # the type is one of: normal, dialog, splash, utility, menu, toolbar, dock,
   #    or desktop
-
   # when multiple rules match a window, they will all be applied, in the
   # order that they appear in this list
-
-
     # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
-
     <decor>yes</decor>
     # enable or disable window decorations
-
     <shade>no</shade>
     # make the window shaded when it appears, or not
-
     <position force="no">
       # the position is only used if both an x and y coordinate are provided
       # (and not set to 'default')
@@ -725,7 +734,6 @@
       # specifies the monitor in a xinerama setup.
       # 1 is the first head, or 'mouse' for wherever the mouse is
     </position>
-
     <size>
       # the size to make the window.
       <width>20</width>
@@ -735,42 +743,33 @@
       # appears on.
       <height>30%</height>
     </size>
-
     <focus>yes</focus>
     # if the window should try be given focus when it appears. if this is set
     # to yes it doesn't guarantee the window will be given focus. some
     # restrictions may apply, but Openbox will try to
-
     <desktop>1</desktop>
     # 1 is the first desktop, 'all' for all desktops
-
     <layer>normal</layer>
     # 'above', 'normal', or 'below'
-
     <iconic>no</iconic>
     # make the window iconified when it appears, or not
-
     <skip_pager>no</skip_pager>
     # asks to not be shown in pagers
-
     <skip_taskbar>no</skip_taskbar>
     # asks to not be shown in taskbars. window cycling actions will also
     # skip past such windows
-
     <fullscreen>yes</fullscreen>
     # make the window in fullscreen mode when it appears
-
     <maximized>true</maximized>
     # 'Horizontal', 'Vertical' or boolean (yes/no)
   </application>
   
-
   # end of the example
     -->
-  <application type="normal">
-    <maximized>false</maximized>
-    <decor>no</decor>
-  </application>
+    <application type="normal">
+      <maximized>false</maximized>
+      <decor>no</decor>
+    </application>
     <application title="Mozilla Firefox">
       <decor>no</decor>
     </application>

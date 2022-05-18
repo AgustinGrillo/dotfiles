@@ -18,7 +18,7 @@ nitrogen --restore &
 
 
 # Compositor
-#picom -f &
+picom -f &
 
 
 #Tint2	
@@ -28,6 +28,9 @@ tint2 -c ~/.config/tint2/pills-taskbar.tint2rc &
 tint2 -c ~/.config/tint2/pills-mpd.tint2rc &
 tint2 -c ~/.config/tint2/pills-power.tint2rc &
 tint2 -c ~/.config/tint2/pills-apps.tint2rc &
+
+#Polybar
+#$HOME/.config/polybar/launch.sh
 
 
 # Notification daemon
@@ -44,6 +47,9 @@ redshift -c ~/.config/redshift/redshift.conf &
 
 #clipit
 clipit &
+
+# Add compose key
+setxkbmap -option compose:caps &
 
 
 # Activate touchpad click
