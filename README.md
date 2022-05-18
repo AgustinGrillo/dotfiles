@@ -39,7 +39,7 @@ scripts must have executable permissions
 - [x] Add bluetooth manager
 - [x] Add rounded corners and shadows
 - [x] Add multi-display capability (arandr)
-- [ ] Change screensaver (blued image) after suspend.
+- [x] Change screensaver (blued image) after suspend.
 - [ ] Change nautilus config, to launch specific terminal instead gnome-terminal.
 - [ ] Add taskbar to panel
 - [ ] Customize vim and neovim configs
