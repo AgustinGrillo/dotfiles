@@ -54,7 +54,7 @@ scripts must have executable permissions
 
 ## ![#a7bdfb](http://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
 - Kitty only launches with bash ➔ ZSH is activated via .bashrc.
-- Fan 100% after lockscreen
+- [~] Fan 100% after lockscreen
 
 ## ![#d990cd](http://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
