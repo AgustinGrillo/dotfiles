@@ -7,7 +7,7 @@ rofi_command="rofi -theme themes/sidebar/five.rasi"
 # Options
 shutdown=""
 reboot=""
-lock=""
+lock=" "
 suspend=""
 logout=""
 
