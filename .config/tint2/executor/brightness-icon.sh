@@ -24,17 +24,23 @@
 bri=$(brightnessctl -m -d intel_backlight | awk -F, '{print substr($4, 0, length($4)-1)}' | tr -d '%')
 #bri=brightnessctl -m -d intel_backlight | grep (?<=percentage:          )[^/]+
 
-if [[ "$bri" -gt "80" ]]; then
-    echo ""
-elif [[ "$bri" -gt "60" ]]; then
-	echo ""
-elif [[ "$bri" -gt "30" ]]; then
-    echo ""
-elif [[ "$bri" -gt "20" ]]; then
-    echo ""
+var20=20
+var40=40
+var60=60
+var80=80
+
+if [ $bri -gt $var80 ]
+    then
+        echo ""
+elif [ $bri -gt $var60 ]
+    then
+        echo ""
+elif [ $bri -gt $var40 ]
+    then
+        echo ""
+elif [ $bri -gt $var20 ]
+    then
+        echo ""
 else
-    echo ""
-fi
-if  [[ $1 = "-l" ]]; then
-    echo ${bri}%
+    echo ""
 fi
