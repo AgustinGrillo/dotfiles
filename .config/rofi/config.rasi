@@ -21,7 +21,7 @@ configuration {
   /*bg: #0F1212;*/
   bg: #1d212a;
   fg: #e3e3e3;
-  accent: #d89495;
+  accent: #fb9199;
   button: #a7bdfb;
   
   background-color: @bg;

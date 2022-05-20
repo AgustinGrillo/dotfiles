@@ -3,13 +3,13 @@
 * {
   /* General */
   text-font:                            "Comfortaa 12";
-  icon-font:                            "material 14";
+  icon-font:                            "material 15";
   show-icons:							 true;
   icon-theme: "Crayons";
 
   
-  option-6-listview-spacing:            6px;
-  menu-window-padding:                  6px;
+  option-6-listview-spacing:            22px;
+  menu-window-padding:                  25px 4px;
   menu-element-padding:                 20px 0px 15px 25px;
 }
 
@@ -43,7 +43,7 @@
 }
 
 #element.selected {
-  background-color: @accent;
+  background-color: @background;
   text-color: @background;
 }
 
@@ -76,7 +76,7 @@
 
 #element.selected {
   border-color: @accent;
-  text-color: @background;
+  text-color: @accent;
 }
 
 element.active,

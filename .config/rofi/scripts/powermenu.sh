@@ -7,7 +7,7 @@ rofi_command="rofi -theme themes/sidebar/five.rasi"
 # Options
 shutdown=""
 reboot=""
-lock=""
+lock=" "
 suspend=""
 logout=""
 
@@ -23,7 +23,7 @@ case $chosen in
         ~/.config/rofi/scripts/promptmenu.sh --yes-command "reboot" --query "       Reboot?"
         ;;
     $lock)
-        lxlock
+        sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"
         ;;
     $suspend)
         mpc -q pause

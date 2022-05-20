@@ -41,8 +41,8 @@
 }
 
 #element.selected {
-  background-color: @accent;
-  text-color: @background;
+  background-color: @background;
+  text-color: @accent;
 }
 
 * {
@@ -74,7 +74,7 @@
 
 #element.selected {
   border-color: @accent;
-  text-color: @background;
+  text-color: @accent;
 }
 
 element.active,
