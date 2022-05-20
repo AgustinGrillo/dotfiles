@@ -45,9 +45,6 @@ Scripts must have executable permissions.
 - [ ] Customize ROFI menu ([configs](https://github.com/adi1090x/rofi)). 
 - [ ] Customize vim and neovim configs
 - [ ] Custom display manager
-- [ ] Add code editor and ide themes (vscode, pycharm)
-- [ ] Add useful widgets
-- [ ] Spicetify spotify
 
 ### Backlog:
 - Change and rice terminal for better ssh compatibility.
