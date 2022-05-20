@@ -27,6 +27,8 @@ case $chosen in
         ;;
     $suspend)
         mpc -q pause
+        # Change screensaver
+        sh -c "/home/$USER/.local/bin/scripts/change_screensaver.sh -f"
         # systemd
         systemctl suspend
         # elogind (runit, etc)
