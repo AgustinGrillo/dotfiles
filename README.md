@@ -23,7 +23,7 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 ## ![#89e19c](http://via.placeholder.com/15/89e19c/000000?text=+) Dependencies:
 openbox, obconf, nitrogen, scrot, xclip, lxappereance, nautilus, python-nautilus, rofi, kitty, zsh, oh-my-zsh, dunst, tint2, redshift, tmux, [tpm](https://github.com/tmux-plugins/tpm), xbacklight ([link](https://askubuntu.com/questions/715306/xbacklight-no-outputs-have-backlight-property-no-sys-class-backlight-folder) for possible bug), dmenu, Imagemagick, gnome-screensaver, xset, xautolock, xfce4-power-manager, clipit, lxpolkit, [networkmanager-dmenu](https://github.com/firecat53/networkmanager-dmenu) (with repspective requirements; [link](https://stackoverflow.com/questions/59389831/cannot-import-name-gi) for possible bug), [rofi-bluetooth](https://github.com/nickclyde/rofi-bluetooth), awk, perl, sed, [playerctl](https://github.com/altdesktop/playerctl) (useful [link](https://askubuntu.com/questions/1080671/how-can-i-install-playerctl)), gedit, gedit-plugins, spotify, pulseaudio volume control, neofetch (>=v7.0), zathura, [bat](https://github.com/sharkdp/bat), vim, neovim, [picom](https://github.com/yshui/picom), brightnessctl.
 
-scripts must have executable permissions
+Scripts must have executable permissions.
 
 
 ## ![#fbdf90](http://via.placeholder.com/15/fbdf90/000000?text=+) Keep ricing 
@@ -40,9 +40,9 @@ scripts must have executable permissions
 - [x] Add rounded corners and shadows
 - [x] Add multi-display capability (arandr)
 - [x] Change screensaver (blued image) after suspend.
-- [ ] Fix power prompt
 - [x] Change nautilus config, to launch specific terminal instead gnome-terminal.
-- [ ] Add taskbar to panel
+- [ ] Fix power prompt
+- [ ] Customize ROFI menu ([configs](https://github.com/adi1090x/rofi)). 
 - [ ] Customize vim and neovim configs
 - [ ] Custom display manager
 - [ ] Add code editor and ide themes (vscode, pycharm)
@@ -54,7 +54,7 @@ scripts must have executable permissions
 
 ## ![#a7bdfb](http://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
 - Kitty only launches with bash ➔ ZSH is activated via .bashrc.
-- [~] Fan 100% after lockscreen
+- Fan 100% after lockscreen --> High cpu usage by picom (only occurs with shadows).
 
 ## ![#d990cd](http://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
