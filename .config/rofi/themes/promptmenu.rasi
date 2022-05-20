@@ -27,6 +27,7 @@
   height: 128px;
   location: center;
   border: 0px;
+  border-radius: 4px;
 }
 
 /* ########### */

@@ -17,6 +17,7 @@
   y-offset: 4%;
   border: 5px;
   border-color: @border;
+  border-radius: 4px;
 }
 
 * {

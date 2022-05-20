@@ -33,6 +33,7 @@ window {
   border-radius: 0px;
   border:6px;
   border-color:#272c38;
+  border-radius: 4px;
 }
 
 prompt, entry {
