@@ -22,8 +22,8 @@ window {
     background-color:               @bg;
     text-color:                     @fg;
     border-radius:                  0px;
-    height:                         15%;
-    width:                          40%;
+    height:                         100%;
+    width:                          100%;
     location:                       center;
     x-offset:                       0;
     y-offset:                       0;
@@ -32,7 +32,7 @@ window {
 
 listview {
     background-color:               @bg;
-    margin:                         3.2% 0% 0% 1.7%;
+    margin:                         40% 0% 0% 32%;
     spacing:                        2%;
     cycle:                          true;
     dynamic:                        false;
