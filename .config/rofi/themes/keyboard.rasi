@@ -41,6 +41,7 @@
   border: 0px;
   // padding: @option-element-padding;
   background-color: @bg;
+  text-color: @fg;
 }
 
 #element.selected {
@@ -70,7 +71,7 @@
 
 #element.selected {
   border-color: @accent;
-  text-color: @background;
+  text-color: @bg;
 }
 
 element.selected.active {
