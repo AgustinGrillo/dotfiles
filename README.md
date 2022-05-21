@@ -41,8 +41,8 @@ Scripts must have executable permissions.
 - [x] Add multi-display capability (arandr)
 - [x] Change screensaver (blued image) after suspend.
 - [x] Change nautilus config, to launch specific terminal instead gnome-terminal.
-- [ ] Fix power prompt
-- [ ] Customize ROFI menu ([configs](https://github.com/adi1090x/rofi)). 
+- [x] Fix power prompt
+- [x] Customize ROFI menu ([configs](https://github.com/adi1090x/rofi)). 
 - [ ] Customize vim and neovim configs
 - [ ] Custom display manager
 
