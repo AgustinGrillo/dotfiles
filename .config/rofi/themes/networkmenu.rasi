@@ -61,7 +61,8 @@ prompt, entry {
 entry {
     border-radius : 0 4px 4px 0;
     margin: 0 0 10px 0;
-    text-color: @bg;
+    text-color: @fg;
+    background-color: @bg;
 }
 
 prompt {
