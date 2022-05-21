@@ -1,4 +1,4 @@
-@import "themes/global-settings.rasi"
+@import "colors/pastel_blue.rasi"
 
 * {
   /* General */
@@ -6,8 +6,8 @@
   icon-font:                            "Rec Mono Casual 10";
   
   option-6-listview-spacing:            5px;
-  menu-window-padding:                  20px 20px;
-  menu-element-padding:                 10px 40px;
+  menu-window-padding:                  20px 0px;
+  menu-element-padding:                 10px 30px;
 }
 
 #window {
@@ -17,12 +17,13 @@
   x-offset: -200px;
   y-offset: 4.5%;
   border: 5px;
-  border-color: @border;
+  border-color: @bg;
+  background-color: @bg;
+  padding: @menu-window-padding;
+  children: [ inputbar, horibox ];
 }
 
 * {
-  background-color: @background;
-  text-color: @foreground;
   font: @icon-font;
 }
 
@@ -32,27 +33,19 @@
 
 #listview {
   layout: vertical;
-  dynamic: true;
+  dynamic: false;
+  background-color: @bg;
 }
 
 #element {
   border: 0px;
   // padding: @option-element-padding;
-  background-color: @background;
+  background-color: @bg;
 }
 
 #element.selected {
-  background-color: @accent;
-  text-color: @background;
-}
-
-* {
-  font: @text-font;
-}
-
-#window {
-  padding: @menu-window-padding;
-  children: [ inputbar, horibox ];
+  background-color: @fg;
+  text-color: @bg;
 }
 
 #inputbar {
@@ -70,31 +63,14 @@
   font: @icon-font;
   border: @menu-element-border;
   padding: @menu-element-padding;
-  border-color: @background;
+  border-color: @bg;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
 }
 
 #element.selected {
   border-color: @accent;
   text-color: @background;
-}
-
-element.active,
-element.selected.urgent {
-  background-color: @on;
-  text-color: @background;
-  border-color: @on;
-}
-
-element.selected.urgent {
-  background-color: @accent;
-  border-color: @accent;
-}
-
-element.urgent,
-element.selected.active {
-  background-color: @off;
-  text-color: @background;
-  border-color: @off;
 }
 
 element.selected.active {

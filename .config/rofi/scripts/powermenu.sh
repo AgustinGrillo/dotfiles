@@ -1,40 +1,115 @@
 #!/usr/bin/env bash
 
-# Requires Material (Icomoon) Font
+## Author  : Aditya Shakya
+## Mail    : adi1090x@gmail.com
+## Github  : @adi1090x
+## Twitter : @adi1090x
 
-rofi_command="rofi -theme themes/sidebar/five.rasi"
+# Available Styles
+# >> Created and tested on : rofi 1.6.0-1
+#
+# column_circle     column_square     column_rounded     column_alt
+# card_circle     card_square     card_rounded     card_alt
+# dock_circle     dock_square     dock_rounded     dock_alt
+# drop_circle     drop_square     drop_rounded     drop_alt
+# full_circle     full_square     full_rounded     full_alt
+# row_circle      row_square      row_rounded      row_alt
+
+theme="card_rounded"
+dir="$HOME/.config/rofi/themes"
+
+# random colors
+#styles=($(ls -p --hide="colors.rasi" $dir/styles))
+# color="${styles[$(( $RANDOM % 8 ))]}"
+
+# comment this line to disable random colors
+# sed -i -e "s/@import .*/@import \"$color\"/g" $dir/styles/colors.rasi
+
+# comment these lines to disable random style
+# themes=($(ls -p --hide="powermenu.sh" --hide="styles" --hide="confirm.rasi" --hide="message.rasi" $dir))
+# theme="${themes[$(( $RANDOM % 24 ))]}"
+
+uptime=$(uptime -p | sed -e 's/up //g')
+
+rofi_command="rofi -theme $dir/$theme"
 
 # Options
-shutdown=""
-reboot=""
-lock=" "
-suspend=""
-logout=""
+shutdown=""
+reboot=""
+lock=""
+suspend=""
+logout=""
+
+# Confirmation
+confirm_exit() {
+	rofi -dmenu\
+		-i\
+		-no-fixed-num-lines\
+		-p "Are You Sure? : "\
+		-theme $dir/confirm.rasi
+}
+
+# Message
+msg() {
+	rofi -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+}
 
 # Variable passed to rofi
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 
-chosen="$(echo -e "$options" | $rofi_command -dmenu -selected-row 2)"
+chosen="$(echo -e "$options" | $rofi_command -p "Uptime: $uptime" -dmenu -selected-row 2)"
 case $chosen in
     $shutdown)
-        ~/.config/rofi/scripts/promptmenu.sh --yes-command "poweroff" --query "      Poweroff?"
+		ans=$(confirm_exit &)
+		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
+			systemctl poweroff
+		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
+			exit 0
+        else
+			msg
+        fi
         ;;
     $reboot)
-        ~/.config/rofi/scripts/promptmenu.sh --yes-command "reboot" --query "       Reboot?"
+		ans=$(confirm_exit &)
+		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
+			systemctl reboot
+		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
+			exit 0
+        else
+			msg
+        fi
         ;;
     $lock)
         sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"
         ;;
     $suspend)
-        mpc -q pause
-        # Change screensaver
-        sh -c "/home/$USER/.local/bin/scripts/change_screensaver.sh -f"
-        # systemd
-        systemctl suspend
-        # elogind (runit, etc)
-        #loginctl suspend
+		ans=$(confirm_exit &)
+		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
+			mpc -q pause
+			amixer set Master mute
+            # Change screensaver
+            sh -c "/home/$USER/.local/bin/scripts/change_screensaver.sh -f"
+			systemctl suspend
+		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
+			exit 0
+        else
+			msg
+        fi
         ;;
     $logout)
-        ~/.config/rofi/scripts/promptmenu.sh --yes-command "pkill -KILL -u $(whoami)" --query "       Logout?"
+		ans=$(confirm_exit &)
+		if [[ $ans == "yes" || $ans == "YES" || $ans == "y" || $ans == "Y" ]]; then
+			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
+				openbox --exit
+			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
+				bspc quit
+			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
+				i3-msg exit
+			fi
+		elif [[ $ans == "no" || $ans == "NO" || $ans == "n" || $ans == "N" ]]; then
+			exit 0
+        else
+			msg
+        fi
         ;;
 esac

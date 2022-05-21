@@ -1,0 +1,73 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"feather 32";
+    show-icons:                     false;
+	icon-theme: 					"Papirus";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@import "colors/pastel_blue.rasi"
+
+window {
+    background-color:               @bg;
+    text-color:                     @fg;
+    border-radius:                  0px;
+    height:                         15%;
+    width:                          40%;
+    location:                       center;
+    x-offset:                       0;
+    y-offset:                       0;
+}
+
+
+listview {
+    background-color:               @bg;
+    margin:                         3.2% 0% 0% 1.7%;
+    spacing:                        2%;
+    cycle:                          true;
+    dynamic:                        false;
+    layout:                         horizontal;
+}
+
+mainbox {
+    background-color:               @bg;
+    children:                       [listview ];
+    spacing:                        0%;
+    padding:                        0% 0% 0% 0%;
+}
+
+element {
+    background-color:               @bg;
+    text-color:                     @se;
+    orientation:                    horizontal;
+    border-radius:                  10px;
+    font:							"feather 60";
+    width:                          110px;
+    heigth:                         130px;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+}
+
+
+element selected {
+    background-color:               @bg;
+    text-color:                     @fg;
+    border:                  		0% 0% 0% 0%;
+    border-radius:                  25px;
+}
+
+
+element selected.active {
+    background-color:               @bg;
+    color:                          @fg;
+}

@@ -9,7 +9,7 @@ configuration {
   width:30;
   terminal: "kitty";
   disable-history: false;
-  sidebar-mode: true;
+  sidebar-mode: false;
   tokenize: true;
   m: "-5";
   line-margin: 4;
@@ -19,22 +19,18 @@ configuration {
   window-format: "{w} {c}";
 }
 
-@import "shared/settings.rasi"
+@import "colors/pastel_blue.rasi"
+
 * {
-  bg: #1d212a;
-  fg: #e3e3e3;
-  accent: #fb9199;
-  button: #a7bdfb;
-  background-color: @bg;
-  text-color: @fg;
   font: "Iosevka FT Regular 10.5";
 }
 
 window {
+  background-color: @bg;
   padding: 30px;
   border-radius: 0px;
   border:6px;
-  border-color:#272c38;
+  border-color:@bg;
   location: northeast;
   x-offset: -54px;
   y-offset: 4.5%;
@@ -42,31 +38,51 @@ window {
   height: 40%;
 }
 
+mainbox {
+    background-color: @bg;
+}
+
+listview{
+    background-color: @bg;
+}
+
+inputbar{
+    background-color: @bg;
+}
+
+case-indicator {
+    background-color: @bg;
+}
+
 prompt, entry {
-  text-color: @fg;
   padding: 8px;
 }
 
 entry {
     border-radius : 0 4px 4px 0;
     margin: 0 0 10px 0;
+    text-color: @bg;
 }
 
 prompt {
-    background-color: @accent;
+    background-color: @fg;
     text-color: @bg;
     border-radius: 4px 0 0 4px;
     margin: 0 0 10px 0;
 }
 
 element {
+  background-color: @bg;
+  text-color: @fg;
   border-radius: 2px;
   padding: 6px 4px;
+  vertical-align: 0.5;
 }
 
 element selected {
-  background-color: @fg;
-  text-color: @bg;
+  background-color: @bg;
+  text-color: @fg;
+  border:  2px 2px 2px 2px;
+  border-color: @fg;
+  border-racius: 10px;
 }
-
-

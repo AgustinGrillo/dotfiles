@@ -305,12 +305,12 @@
 	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome</command></action></keybind>
 	<keybind key="W-v"><action name="Execute"><startupnotify><enabled>true</enabled><name>Vivaldi</name></startupnotify><command>vivaldi-stable</command></action></keybind>
 	<keybind key="W-n"><action name="Execute"><startupnotify><enabled>true</enabled><name>Notion</name></startupnotify><command>notion-app</command></action></keybind>
-	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show windowcd -show-icons -window-thumbnail -modi windowcd</command></action></keybind>
+	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show windowcd -show-icons -window-thumbnail -modi windowcd -theme ~/.config/rofi/themes/launcher</command></action></keybind>
 <!--
 	<keybind key="A-space"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun</command></action></keybind>
 -->
-	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons</command></action></keybind>
-	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun</command></action></keybind>
+	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons -theme ~/.config/rofi/themes/launcher</command></action></keybind>
+	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -theme ~/.config/rofi/themes/launcher</command></action></keybind>
 	<keybind key="W-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"</command></action></keybind>
 	<keybind key="W-S-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>suspend</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"</command></action></keybind>
 	<keybind key="W-A-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>redshift</name></startupnotify><command>bash -c '~/.local/bin/scripts/redshift_toggle.sh'</command></action></keybind>

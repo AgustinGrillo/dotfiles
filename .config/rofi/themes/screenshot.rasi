@@ -1,4 +1,4 @@
-@import "global-settings.rasi"
+@import "colors/pastel_blue.rasi"
 
 * {
   /* General */
@@ -8,9 +8,9 @@
   icon-theme: "Crayons";
 
   
-  option-6-listview-spacing:            22px;
-  menu-window-padding:                  25px 4px;
-  menu-element-padding:                 20px 0px 15px 25px;
+  option-5-listview-spacing:            30px;
+  menu-window-padding:                  40px 4px;
+  menu-element-padding:                 20px 0px 0px 0px;
 }
 
 #window {
@@ -21,11 +21,12 @@
   x-offset: -1%;
   y-offset: 0%;
   border: 0px;
+  padding: @menu-window-padding;
 }
 
 * {
-  background-color: @background;
-  text-color: @foreground;
+  background-color: @bg;
+  text-color: @fg;
   font: @icon-font;
 }
 
@@ -35,17 +36,6 @@
 
 #listview {
   layout: vertical;
-}
-
-#element {
-  border: 0px;
-  padding: @option-element-padding;
-  background-color: @background-light;
-}
-
-#element.selected {
-  background-color: @background;
-  text-color: @background;
 }
 
 * {
@@ -64,42 +54,22 @@
 }
 
 #listview {
-  spacing: @option-6-listview-spacing;
+  spacing: @option-5-listview-spacing;
   lines: 5;
 }
 
 #element {
   font: @icon-font;
-  border: @menu-element-border;
+  background-color: @bg;
+  border:0;
   padding: @menu-element-padding;
-  border-color: @background-light;
+  text-color: @se;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
 }
 
 #element.selected {
-  border-color: @accent;
-  text-color: @accent;
-}
-
-element.active,
-element.selected.urgent {
-  background-color: @on;
-  text-color: @background;
-  border-color: @on;
-}
-
-element.selected.urgent {
-  background-color: @accent;
-  border-color: @accent;
-}
-
-element.urgent,
-element.selected.active {
-  background-color: @off;
-  text-color: @background;
-  border-color: @off;
-}
-
-element.selected.active {
-  background-color: @accent;
-  border-color: @accent;
+    background-color: @bg;
+    border-color: @bg;
+    text-color: @fg;
 }
