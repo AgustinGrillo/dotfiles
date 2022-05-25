@@ -108,7 +108,14 @@ export PATH="$HOME/.local/bin:$PATH"
 #source "$HOME/.cargo/env"
 
 #neofetch --source /home/agus/.config/neofetch/art/little_penguin.txt
-neofetch
+#neofetch
 
+# Alias
+alias nv="nvim"
 ############ ROS ###################
 #source /opt/ros/melodic/setup.zsh
+
+# nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
