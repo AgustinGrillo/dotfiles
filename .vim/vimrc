@@ -61,7 +61,11 @@ set matchpairs+=<:>
 
 " Show line numbers
 set number
+set relativenumber
 highlight LineNr ctermfg=1 ctermbg=0
+set mouse=a
+set cursorline
+set autoindent
 
 " Set status line display
 set laststatus=2

@@ -112,6 +112,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Alias
 alias nv="nvim"
+alias bat="batcat"
 ############ ROS ###################
 #source /opt/ros/melodic/setup.zsh
 
