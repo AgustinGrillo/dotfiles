@@ -50,7 +50,7 @@ Scripts must have executable permissions.
 - Change and rice terminal for better ssh compatibility.
 
 ## ![#a7bdfb](http://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
-- Fan 100% after lockscreen ➔ High cpu usage by picom (only occurs with shadows).
+~ Fan 100% after lockscreen ➔ High cpu usage by picom (only occurs with shadows).
 
 ## ![#d990cd](http://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
