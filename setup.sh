@@ -7,7 +7,7 @@ ln -sf ~/Documents/dotfiles/.Xresources ~/.Xresources
 rm -r ~/.vim
 ln -sfd ~/Documents/dotfiles/.vim ~/.vim 
 rm -r ~/nvim
-ln -sfd ~/Documents/dotfiles/nvim ~/nvim 
+ln -sfd ~/Documents/dotfiles/.config/nvim ~/.config/nvim 
 ln -sfd ~/Documents/dotfiles/.themes/Bleu\ Foncé  ~/.themes/Bleu\ Foncé 
 ln -sf ~/Documents/dotfiles/.local/bin/networkmanager_dmenu ~/.local/bin/networkmanager_dmenu 
 ln -sf ~/Documents/dotfiles/.local/bin/rofi-bluetooth ~/.local/bin/rofi-bluetooth 
