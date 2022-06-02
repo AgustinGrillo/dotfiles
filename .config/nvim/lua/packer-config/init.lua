@@ -19,4 +19,8 @@ return require('packer').startup(function()
   use 'L3MON4D3/LuaSnip' 
   -- Git plugins
   use 'airblade/vim-gitgutter'
+  -- TODO: Tree sitter 
+  -- See: https://alpha2phi.medium.com/neovim-tips-for-a-better-coding-experience-3d0f782f034e
+  -- Lualine
+  use 'nvim-lualine/lualine.nvim'
 end)
