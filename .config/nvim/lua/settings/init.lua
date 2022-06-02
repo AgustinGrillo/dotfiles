@@ -21,3 +21,4 @@ set.cursorline = true             -- highlight current cursorline
 set.ttyfast = true                 -- Speed up scrolling in Vim
 set.termguicolors = true 
 set.scrolloff = 5
+set.updatetime =10

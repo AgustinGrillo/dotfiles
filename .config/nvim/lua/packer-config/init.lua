@@ -17,4 +17,6 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip' 
   -- Snippets plugin
   use 'L3MON4D3/LuaSnip' 
+  -- Git plugins
+  use 'airblade/vim-gitgutter'
 end)
