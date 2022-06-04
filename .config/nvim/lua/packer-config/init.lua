@@ -32,4 +32,11 @@ return require('packer').startup(function()
   use 'sharkdp/fd'
   use 'BurntSushi/ripgrep'
   use 'AckslD/nvim-neoclip.lua'
+  -- Comments
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+    }
 end)
