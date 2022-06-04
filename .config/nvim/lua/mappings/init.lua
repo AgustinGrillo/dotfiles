@@ -14,13 +14,15 @@ map('n', '<leader>fy', ':Telescope neoclip <CR>', opts)
 -- Commenting
 map('n', '<C-Bslash>', "<Plug>(comment_toggle_current_linewise)", opts)
 vim.keymap.set('x', '<C-Bslash>', '<Plug>(comment_toggle_blockwise_visual)')
--- Window navigation
+-- Window Navigation
 map('n', '<A-w>,', ':wincmd h <CR>', opts)
 map('n', '<A-w><Left>', ':wincmd h <CR>', opts)
 map('n', '<A-w>h', ':wincmd h <CR>', opts)
 map('n', '<A-w>.', ':wincmd l <CR>', opts)
 map('n', '<A-w><Right>', ':wincmd l <CR>', opts)
 map('n', '<A-w>l', ':wincmd l <CR>', opts)
+-- Window Managment
+map('n', '<A-w>v', ':vsplit <CR>', opts)
 -- Barbar (tabline)
 map('n', '<A-,>', ':BufferPrevious<CR>', opts)
 map('n', '<A-.>', ':BufferNext<CR>', opts)
