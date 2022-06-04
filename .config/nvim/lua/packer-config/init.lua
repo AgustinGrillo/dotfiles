@@ -48,4 +48,5 @@ return require('packer').startup(function()
   -- Code Run and Debug
   use 'CRAG666/code_runner.nvim'
   use 'mfussenegger/nvim-dap'
+  use "rcarriga/nvim-dap-ui"
 end)
