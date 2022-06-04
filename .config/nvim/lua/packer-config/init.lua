@@ -45,6 +45,7 @@ return require('packer').startup(function()
   use 'romgrk/barbar.nvim'
   -- Scrolling
   -- TODO
-  -- Code Run
+  -- Code Run and Debug
   use 'CRAG666/code_runner.nvim'
+  use 'mfussenegger/nvim-dap'
 end)
