@@ -25,6 +25,11 @@ return require('packer').startup(function()
   -- Lualine
   use 'nvim-lualine/lualine.nvim'
   -- Telescope / FuzzyFinder
+  use 'nvim-lua/popup.nvim'
   use 'nvim-lua/plenary.nvim'
   use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-media-files.nvim'
+  use 'sharkdp/fd'
+  use 'BurntSushi/ripgrep'
+  use 'AckslD/nvim-neoclip.lua'
 end)
