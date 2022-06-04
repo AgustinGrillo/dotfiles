@@ -20,7 +20,8 @@ return require('packer').startup(function()
   -- Git plugins
   use 'airblade/vim-gitgutter'
   use 'sindrets/diffview.nvim'
-  -- TODO: Tree sitter 
+  -- Tree sitter 
+  -- TODO
   -- See: https://alpha2phi.medium.com/neovim-tips-for-a-better-coding-experience-3d0f782f034e
   use 'nvim-treesitter/nvim-treesitter'
   -- Lualine
@@ -42,4 +43,8 @@ return require('packer').startup(function()
     }
   -- Tabline
   use 'romgrk/barbar.nvim'
+  -- Scrolling
+  -- TODO
+  -- Code Run
+  use 'CRAG666/code_runner.nvim'
 end)

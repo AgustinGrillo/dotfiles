@@ -38,3 +38,6 @@ map('n', '<A-7>', ':BufferGoto 7<CR>', opts)
 map('n', '<A-8>', ':BufferGoto 8<CR>', opts)
 map('n', '<A-9>', ':BufferGoto 9<CR>', opts)
 map('n', '<A-c>', ':BufferClose<CR>', opts)
+-- Code Runner
+map('n', '<leader>rr', ':RunCode<CR>', opts)
+map('n', '<leader>rc', ':RunClose<CR>', opts)
