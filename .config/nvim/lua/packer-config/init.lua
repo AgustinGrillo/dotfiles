@@ -40,4 +40,6 @@ return require('packer').startup(function()
         require('Comment').setup()
     end
     }
+  -- Tabline
+  use 'romgrk/barbar.nvim'
 end)

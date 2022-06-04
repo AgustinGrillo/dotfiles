@@ -80,6 +80,11 @@ _G.packer_plugins = {
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["barbar.nvim"] = {
+    loaded = true,
+    path = "/home/agus/.local/share/nvim/site/pack/packer/start/barbar.nvim",
+    url = "https://github.com/romgrk/barbar.nvim"
+  },
   ["cmp-nvim-lsp"] = {
     loaded = true,
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
