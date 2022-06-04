@@ -43,10 +43,12 @@ return require('packer').startup(function()
     }
   -- Tabline
   use 'romgrk/barbar.nvim'
-  -- Scrolling
-  -- TODO
   -- Code Run and Debug
   use 'CRAG666/code_runner.nvim'
   use 'mfussenegger/nvim-dap'
   use "rcarriga/nvim-dap-ui"
+  -- TODO: Add plugins
+  -- Scrolling
+  -- Git Helpers
+  -- vim-surround
 end)
