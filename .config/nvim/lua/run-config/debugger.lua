@@ -2,6 +2,7 @@ local dap = require('dap')
 local dapui = require('dapui')
 
 
+-- Python Config
 dap.adapters.python = {
   type = 'executable';
   command = '/home/agus/.virtualenvs/debugpy/bin/python';
@@ -22,17 +23,12 @@ dap.configurations.python = {
     pythonPath = function()
       -- debugpy supports launching an application with a different interpreter then the one used to launch debugpy itself.
       -- The code below looks for a `venv` or `.venv` folder in the current directly and uses the python within.
-      -- You could adapt this - to for example use the `VIRTUAL_ENV` environment variable.
-      --[[ local cwd = vim.fn.getcwd()
-      if vim.fn.executable(cwd .. '/venv/bin/python') == 1 then
-        return cwd .. '/venv/bin/python'
-      elseif vim.fn.executable(cwd .. '/.venv/bin/python') == 1 then
-        return cwd .. '/.venv/bin/python'
+      local conda_path = os.getenv("CONDA_PREFIX") 
+      if (conda_path ~= nil and vim.fn.executable(conda_path .. '/bin/python') == 1) then
+        return conda_path .. '/bin/python'
       else
         return '/usr/bin/python3'
-      end ]]
-      -- TODO: Automate conda env process.
-      return "/home/agus/Programs/anaconda3/envs/iop/bin/python"
+      end
     end;
   },
 }
