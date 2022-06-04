@@ -43,14 +43,15 @@ Scripts must have executable permissions.
 - [x] Change nautilus config, to launch specific terminal instead gnome-terminal.
 - [x] Fix power prompt
 - [x] Customize ROFI menu ([configs](https://github.com/adi1090x/rofi)). 
-- [ ] Customize vim and neovim configs
-- [ ] Custom display manager
+- [x] Customize vim and neovim configs
+- [ ] Add shell script to automate installation.
 
 ### Backlog:
+- Custom display manager
 - Change and rice terminal for better ssh compatibility.
 
 ## ![#a7bdfb](http://via.placeholder.com/15/a7bdfb/000000?text=+) Known Bugs:
-- [~] Fan 100% after lockscreen ➔ High cpu usage by picom.
+- [x] Fan 100% after lockscreen ➔ High cpu usage by picom.
 
 ## ![#d990cd](http://via.placeholder.com/15/d990cd/000000?text=+) Credits:
 - [u/TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots)
