@@ -21,9 +21,10 @@ return require('packer').startup(function()
   use 'airblade/vim-gitgutter'
   use 'sindrets/diffview.nvim'
   -- Tree sitter 
-  -- TODO
-  -- See: https://alpha2phi.medium.com/neovim-tips-for-a-better-coding-experience-3d0f782f034e
-  use 'nvim-treesitter/nvim-treesitter'
+ use {
+       'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    } 
   -- Lualine
   use 'nvim-lualine/lualine.nvim'
   -- Telescope / FuzzyFinder
