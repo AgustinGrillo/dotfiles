@@ -48,6 +48,8 @@ return require('packer').startup(function()
   use 'CRAG666/code_runner.nvim'
   use 'mfussenegger/nvim-dap'
   use "rcarriga/nvim-dap-ui"
+  -- Github copilot
+  use "github/copilot.vim"
   -- TODO: Add plugins
   -- Scrolling
   -- Git Helpers
