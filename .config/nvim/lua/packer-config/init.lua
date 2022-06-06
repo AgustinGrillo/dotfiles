@@ -18,6 +18,8 @@ return require('packer').startup(function()
   use 'saadparwaiz1/cmp_luasnip' 
   -- Snippets plugin
   use 'L3MON4D3/LuaSnip' 
+  -- Highlighting
+  use 'RRethy/vim-illuminate'
   -- Git plugins
   use 'airblade/vim-gitgutter'
   use 'sindrets/diffview.nvim'
