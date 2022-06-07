@@ -13,6 +13,31 @@ vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, opts)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, opts)
 vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, opts)
 
+-- LSP diagnostic config
+-- Change severity for signs and text.
+vim.diagnostic.config({
+  underline = {severity = vim.diagnostic.severity.ERROR},
+  virtual_text = {severity = {min=vim.diagnostic.severity.ERROR},
+                  spacing = 4,
+                  prefix = '●',},
+  signs = {severity = {min=vim.diagnostic.severity.WARN}},
+})
+-- Add floating window to display diagnostics
+vim.o.updatetime = 500
+vim.cmd [[autocmd! CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})]]
+-- Change diagnoistic sign (Highlight number instead of icon)
+vim.cmd [[
+  highlight! DiagnosticLineNrError guibg=SignColumn guifg=#F38BA8 gui=bold
+  highlight! DiagnosticLineNrWarn guibg=SignColumn guifg=#F9E2AF gui=bold
+  highlight! DiagnosticLineNrInfo guibg=SignColumn guifg=#A6E3A1 gui=bold
+  highlight! DiagnosticLineNrHint guibg=SignColumn guifg=#89B4FA gui=bold
+
+  sign define DiagnosticSignError text= texthl=DiagnosticSignError linehl= numhl=DiagnosticLineNrError
+  sign define DiagnosticSignWarn text= texthl=DiagnosticLineNrWarn linehl= numhl=DiagnosticLineNrWarn
+  sign define DiagnosticSignInfo text= texthl=DiagnosticSignInfo linehl= numhl=DiagnosticLineNrInfo
+  sign define DiagnosticSignHint text= texthl=DiagnosticSignHint linehl= numhl=DiagnosticLineNrHint
+]]
+
 -- Use an on_attach function to only map the following keys
 -- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
