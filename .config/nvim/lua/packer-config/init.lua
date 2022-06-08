@@ -53,8 +53,9 @@ return require('packer').startup(function()
   use "rcarriga/nvim-dap-ui"
   -- Github copilot
   use "github/copilot.vim"
-  -- TODO: Add plugins
   -- Scrolling
+  use 'karb94/neoscroll.nvim'
+  -- TODO: Add plugins
   -- Git Helpers
   -- vim-surround
 end)
