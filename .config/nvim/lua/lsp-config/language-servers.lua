@@ -72,12 +72,24 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 for _, lsp in pairs(servers) do
-  require('lspconfig')[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    flags = {
-      -- This will be the default in neovim 0.7+
-      debounce_text_changes = 150,
-    }
-  }
+  if lsp == 'clangd' then
+      require('lspconfig')[lsp].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        flags = {
+          -- This will be the default in neovim 0.7+
+          debounce_text_changes = 150,
+        },
+        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "arduino" },
+      }
+  else
+      require('lspconfig')[lsp].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        flags = {
+          -- This will be the default in neovim 0.7+
+          debounce_text_changes = 150,
+        }
+      }
+  end
 end
