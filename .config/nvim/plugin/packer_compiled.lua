@@ -214,6 +214,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/agus/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   }
 }
 

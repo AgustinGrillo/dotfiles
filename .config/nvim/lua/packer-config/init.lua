@@ -55,7 +55,6 @@ return require('packer').startup(function()
   use "github/copilot.vim"
   -- Scrolling
   use 'karb94/neoscroll.nvim'
-  -- TODO: Add plugins
-  -- Git Helpers
   -- vim-surround
+  use 'tpope/vim-surround'
 end)
