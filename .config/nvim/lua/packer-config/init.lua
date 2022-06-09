@@ -23,6 +23,7 @@ return require('packer').startup(function()
   -- Git plugins
   use 'airblade/vim-gitgutter'
   use 'sindrets/diffview.nvim'
+  use 'kdheepak/lazygit.nvim'
   -- Tree sitter 
  use {
        'nvim-treesitter/nvim-treesitter',

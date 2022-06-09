@@ -115,6 +115,11 @@ _G.packer_plugins = {
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/fd",
     url = "https://github.com/sharkdp/fd"
   },
+  ["lazygit.nvim"] = {
+    loaded = true,
+    path = "/home/agus/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
+    url = "https://github.com/kdheepak/lazygit.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/lualine.nvim",

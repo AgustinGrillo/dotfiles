@@ -1,4 +1,4 @@
-local servers = { 'pyright', 'clangd', 'sumneko_lua' }
+local servers = { 'pyright', 'clangd', 'sumneko_lua' , 'arduino_language_server' }
 
 -- Lsp installer (Beofre lspconfig setup)
 require("nvim-lsp-installer").setup {
@@ -72,7 +72,7 @@ capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 for _, lsp in pairs(servers) do
-  if lsp == 'clangd' then
+  if lsp == 'arduino_language_server' then
       require('lspconfig')[lsp].setup {
         on_attach = on_attach,
         capabilities = capabilities,
@@ -80,8 +80,25 @@ for _, lsp in pairs(servers) do
           -- This will be the default in neovim 0.7+
           debounce_text_changes = 150,
         },
-        filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "arduino" },
+        cmd = {
+            "arduino-language-server",
+            "-cli-config", "/home/agus/.arduino15/arduino-cli.yaml",
+            "-fqbn", "esp32:esp32:nodemcu-32s",
+            '-cli', '/home/agus/.local/bin/arduino-cli',
+            '-clangd', '/usr/bin/clangd',
+        }
       }
+  elseif lsp == 'clangd' then
+    require('lspconfig')[lsp].setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        flags = {
+          -- This will be the default in neovim 0.7+
+          debounce_text_changes = 150,
+        },
+        filetype = {"c", "cpp", "objc", "objcpp", "arduino", "ino"},
+      }
+
   else
       require('lspconfig')[lsp].setup {
         on_attach = on_attach,
