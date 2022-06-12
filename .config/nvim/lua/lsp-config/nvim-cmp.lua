@@ -6,6 +6,9 @@ vim.g.copilot_assume_mapped = true
 
 -- nvim-cmp setup
 local cmp = require 'cmp'
+
+vim.opt.completeopt = {'menu', 'menuone' ,'noselect'}
+
 cmp.setup {
     snippet = {
         expand = function(args)
@@ -39,8 +42,10 @@ cmp.setup {
             end
         end, { 'i', 's' }),
     }),
-    sources = {
-        { name = 'nvim_lsp' },
-        { name = 'luasnip' },
-    },
+    sources = cmp.config.sources({
+      { name = 'nvim_lsp' },
+      { name = 'luasnip' }, 
+    }, {
+      { name = 'buffer' },
+    })
 }
