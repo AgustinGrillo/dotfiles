@@ -16,6 +16,8 @@ require('neoscroll').setup({
 local t = {}
 -- Syntax: t[keys] = {function, {function arguments}}
 t['<C-Up>'] = {'scroll', {'-0.10', 'false', '100'}}
+t['<C-k>'] = {'scroll', {'-0.20', 'false', '100'}}
 t['<C-Down>'] = {'scroll', { '0.10', 'false', '100'}}
+t['<C-j>'] = {'scroll', { '0.20', 'false', '100'}}
 
 require('neoscroll.config').set_mappings(t)
