@@ -60,4 +60,6 @@ return require('packer').startup(function()
   use 'karb94/neoscroll.nvim'
   -- vim-surround
   use 'tpope/vim-surround'
+  -- Terminal toggler
+  use {"akinsho/toggleterm.nvim", tag = 'v1'}
 end)
