@@ -25,3 +25,4 @@ mkdir ~/screensaver
 ln -sf ~/Documents/dotfiles/Oblivion-dark.Xresources  ~/Oblivion-dark.Xresources 
 ln -sfd ~/Documents/dotfiles/.local/share/nautilus-python ~/.local/share/nautilus-python 
 chmod +x ~/Documents/dotfiles/.local/share/nautilus-python/extensions/open-kitty.py
+ln -sf ~/Documents/dotfiles/.config/lazygit/config.yml ~/.config/lazygit/config.yml
