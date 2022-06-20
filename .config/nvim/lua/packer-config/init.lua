@@ -62,4 +62,6 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   -- Terminal toggler
   use {"akinsho/toggleterm.nvim", tag = 'v1'}
+  -- Todo's manager
+  use 'folke/todo-comments.nvim'
 end)
