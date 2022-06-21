@@ -55,13 +55,15 @@ return require('packer').startup(function()
   use 'mfussenegger/nvim-dap'
   use "rcarriga/nvim-dap-ui"
   -- Github copilot
-  use "github/copilot.vim"
+  -- use "github/copilot.vim"
   -- Scrolling
   use 'karb94/neoscroll.nvim'
   -- vim-surround
   use 'tpope/vim-surround'
   -- Terminal toggler
-  use {"akinsho/toggleterm.nvim", tag = 'v1'}
+  use {"akinsho/toggleterm.nvim", tag = 'v1.*'}
   -- Todo's manager
   use 'folke/todo-comments.nvim'
+  -- Markdown plugin
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 end)
