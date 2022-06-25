@@ -23,7 +23,7 @@ return require('packer').startup(function()
   -- Highlighting
   use 'RRethy/vim-illuminate'
   -- Git plugins
-  use 'airblade/vim-gitgutter'
+  use 'lewis6991/gitsigns.nvim'
   use 'sindrets/diffview.nvim'
   use 'kdheepak/lazygit.nvim'
   -- Tree sitter 

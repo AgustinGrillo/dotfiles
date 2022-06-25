@@ -125,6 +125,11 @@ _G.packer_plugins = {
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/fd",
     url = "https://github.com/sharkdp/fd"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/agus/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["lazygit.nvim"] = {
     loaded = true,
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
@@ -236,11 +241,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/agus/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
-  },
-  ["vim-gitgutter"] = {
-    loaded = true,
-    path = "/home/agus/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
-    url = "https://github.com/airblade/vim-gitgutter"
   },
   ["vim-illuminate"] = {
     loaded = true,
