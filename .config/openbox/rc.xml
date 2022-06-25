@@ -791,17 +791,27 @@
       <maximized>false</maximized>
       <decor>no</decor>
     </application>
-    <application title="Mozilla Firefox">
-      <decor>no</decor>
-    </application>
-    <application name="vivaldi-stable">
-      <desktop>3</desktop>
-    </application>
-    <application name="kitty">
-      <position force="no">
+    <application title="google-chrome">
+      <maximized>true</maximized>
+      <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
+        <size>
+          <width>100%</width>
+          <height>100%</height>
+        </size>
+      <decor>no</decor>
+    </application>
+    <application name="kitty">
+      <position force="yes">
+        <x>center</x>
+        <y>-30</y>
+      </position>
+        <size>
+          <width>95%</width>
+          <height>90%</height>
+        </size>
       <decor>no</decor>
     </application>
     <application name="xfce4-terminal">
@@ -810,10 +820,6 @@
         <y>center</y>
       </position>
     </application>
-    <application name="code-oss">
-      <decor>no</decor>
-      <!-- <desktop>4</desktop> -->
-    </application>
     <application name="org.pwmt.zathura">
       <decor>no</decor>
       <position force="yes">
@@ -821,12 +827,12 @@
         <y>0</y>
       </position>
     </application>
-    <application name="notion">
-      <maximized>true</maximized>
+    <application name="nautilus">
+      <maximized>Vertical</maximized>
       <decor>no</decor>
       <position force="yes">
-        <x>center</x>
-        <y>center</y>
+        <x>0</x>
+        <y>0</y>
       </position>
     </application>
   </applications>
