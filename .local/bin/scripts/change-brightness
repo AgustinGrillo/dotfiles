@@ -37,12 +37,14 @@ function notify {
 case $1 in
     up)
 	# +5%
-        xbacklight -inc 5
+        # xbacklight -inc 5
+        brightnessctl set +5%
 	notify
 	;;
     down)
     # -5%
-        xbacklight -dec 5
+        # xbacklight -dec 5
+        brightnessctl set 5%-
 	notify
 	;;
 
