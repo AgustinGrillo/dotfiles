@@ -1,11 +1,11 @@
-# Ubuntu Pastel Rice 
+# Arch Pastel Rice 
 
-This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots.git) repository.
+This rice is an adaptation and customization of [TheSuburbanExorcist](https://github.com/obliviousofcraps/mf-dots.git) repository.
 
 *Caveat*: Work in progress :snail:
 
 ## ![#fc8993](http://via.placeholder.com/15.png/fc8993/000000?text=+)  Configuration
-- OS: Ubuntu 18.04 LTE / 20.04 LTE
+- OS: Arch Linux
 - WM: Openbox
 - Terminal: Kitty
 - Shell: ZSH
@@ -13,12 +13,6 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 - Icons: Cherry
 - Font icons: Icomoon and Fontello
 - FM: Nautilus
-
-
-![image](resources/blue_pastel_1.png)
-![image](resources/blue_pastel_10.png)
-![image](resources/blue_pastel_11.png)
-![image](resources/blue_pastel_12.png)
 
 
 ## ![#89e19c](http://via.placeholder.com/15/89e19c/000000?text=+) Dependencies:
