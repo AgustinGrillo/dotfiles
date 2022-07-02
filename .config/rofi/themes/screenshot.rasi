@@ -9,7 +9,7 @@
 
   
   option-5-listview-spacing:            30px;
-  menu-window-padding:                  40px 4px;
+  menu-window-padding:                  40px 9px;
   menu-element-padding:                 20px 0px 0px 0px;
 }
 
@@ -66,6 +66,11 @@
   text-color: @se;
   horizontal-align: 0.5;
   vertical-align: 0.5;
+}
+
+element-text, element-icon {
+    background-color: @bg;
+    text-color:       inherit;
 }
 
 #element.selected {
