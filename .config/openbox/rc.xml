@@ -302,7 +302,7 @@
 	<keybind key="W-e"><action name="Execute"><startupnotify><enabled>true</enabled><name>nautilus</name></startupnotify><command>nautilus</command></action></keybind>
 	<keybind key="C-A-t"><action name="Execute"><startupnotify><enabled>true</enabled><name>kitty</name></startupnotify><command>kitty</command></action></keybind>
 	<keybind key="W-S-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>reconfigure</name></startupnotify><command>openbox --reconfigure</command></action></keybind>
-	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome</command></action></keybind>
+	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome-stable</command></action></keybind>
 	<keybind key="W-v"><action name="Execute"><startupnotify><enabled>true</enabled><name>Vivaldi</name></startupnotify><command>vivaldi-stable</command></action></keybind>
 	<keybind key="W-n"><action name="Execute"><startupnotify><enabled>true</enabled><name>Notion</name></startupnotify><command>notion-app</command></action></keybind>
 	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show windowcd -show-icons -window-thumbnail -modi windowcd -theme ~/.config/rofi/themes/launcher</command></action></keybind>
@@ -791,27 +791,27 @@
       <maximized>false</maximized>
       <decor>no</decor>
     </application>
-    <application title="google-chrome">
+    <application title="google-chrome-stable">
       <maximized>true</maximized>
       <position force="yes">
         <x>center</x>
         <y>center</y>
       </position>
-        <size>
-          <width>100%</width>
-          <height>100%</height>
-        </size>
+      <size>
+        <width>100%</width>
+        <height>100%</height>
+      </size>
       <decor>no</decor>
     </application>
     <application name="kitty">
       <position force="yes">
         <x>center</x>
-        <y>55</y>
+        <y>15%</y>
       </position>
-        <size>
-          <width>98%</width>
-          <height>94%</height>
-        </size>
+      <size>
+        <width>70%</width>
+        <height>75%</height>
+      </size>
       <decor>no</decor>
     </application>
     <application name="xfce4-terminal">
