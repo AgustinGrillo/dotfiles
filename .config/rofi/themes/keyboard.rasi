@@ -6,11 +6,11 @@
   icon-font:                            "Rec Mono Casual 10";
   
   option-6-listview-spacing:            5px;
-  menu-window-padding:                  20px 0px;
+  menu-window-padding:                  20px 12px;
   menu-element-padding:                 10px 30px;
 }
 
-#window {
+window {
   width: 8%;
   height: 12%;
   location: northeast;
@@ -27,40 +27,31 @@
   font: @icon-font;
 }
 
-#horibox {
+horibox {
   children: [ listview ];
 }
 
-#listview {
+listview {
   layout: vertical;
   dynamic: false;
   background-color: @bg;
+  spacing: @option-6-listview-spacing;
+  lines: 2;
 }
 
-#element {
+element {
   border: 0px;
   // padding: @option-element-padding;
   background-color: @bg;
-  text-color: @fg;
 }
 
-#element.selected {
-  background-color: @fg;
-  text-color: @bg;
-}
-
-#inputbar {
+inputbar {
   enabled: false;
   children: [ textbox-prompt-colon, prompt ];
   margin: @menu-inputbar-margin;
 }
 
-#listview {
-  spacing: @option-6-listview-spacing;
-  lines: 2;
-}
-
-#element {
+element {
   font: @icon-font;
   border: @menu-element-border;
   padding: @menu-element-padding;
@@ -69,12 +60,14 @@
   vertical-align: 0.5;
 }
 
-#element.selected {
-  border-color: @accent;
-  text-color: @bg;
+element-text, element-icon {
+    background-color: @bg;
+    text-color:       inherit;
 }
 
-element.selected.active {
-  background-color: @accent;
-  border-color: @accent;
+element normal {
+    text-color:       				@se;
+}
+element selected {
+    text-color:       				@fg;
 }
