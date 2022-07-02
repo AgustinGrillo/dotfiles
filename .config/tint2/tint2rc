@@ -543,14 +543,14 @@ execp_icon_h = 0
 #-------------------------------------
 # Executor 15
 execp = new
-execp_command = rofi-bluetooth --status
+execp_command = ~/.local/bin/rofi-bluetooth --status
 execp_interval = 0
 execp_has_icon = 0
 execp_cache_icon = 1
 execp_continuous = 0
 execp_markup = 1
 execp_monitor = all
-execp_lclick_command = rofi-bluetooth
+execp_lclick_command = ~/.local/bin/rofi-bluetooth 
 execp_rclick_command = 
 execp_mclick_command = 
 execp_uwheel_command = 
