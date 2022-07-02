@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-vi-mode)
+plugins=(git)  # zsh-vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -112,18 +112,15 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Alias
 alias v="nvim"
-alias bat="batcat"
 ############ ROS ###################
 #source /opt/ros/melodic/setup.zsh
 
 # nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source /usr/share/nvm/init-nvm.sh
 
 # Enable vi mode
-bindkey -v
+# bindkey -v
 # Add arrow search.
-bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
+# bindkey "^[[A" up-line-or-beginning-search
+# bindkey "^[[B" down-line-or-beginning-search
 
