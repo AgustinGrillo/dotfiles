@@ -23,7 +23,7 @@
 	<separator label="Hey Agus  "/>
 	<item label="Apps" icon="/home/agus/.icons/custom/nexa_iconpack.png">
 		<action name="Execute">
-			<command>rofi -show drun</command>
+			<command>rofi -show drun -theme ~/.config/rofi/themes/launcher</command>
 		</action>
 	</item>
 	<separator/>
@@ -34,7 +34,7 @@
 	</item>
 	<item label="Web" icon="/home/agus/.icons/cherry/24x24/actions/web-browser.svg">
 		<action name="Execute">
-			<command>google-chrome</command>
+			<command>google-chrome-stable</command>
 		</action>
 	</item>
 	<item label="Terminal" icon="/home/agus/.icons/cherry/24x24/apps/gnome-terminal.svg">
