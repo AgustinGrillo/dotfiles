@@ -85,5 +85,10 @@ element selected {
   text-color: @fg;
   border:  2px 2px 2px 2px;
   border-color: @fg;
-  border-racius: 10px;
+  border-radius: 2px;
+}
+
+element-text, element-icon {
+    background-color: @bg;
+    text-color:       @fg;
 }
