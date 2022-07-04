@@ -24,7 +24,8 @@ font pango:monospace 8
 # --- Autostart ---
 exec nitrogen --restore
 exec picom -f
-exec tint2
+# exec polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec dunst
 exec xfce4-power-manager
 exec redshift -c ~/.config/redshift/redshift.conf 
