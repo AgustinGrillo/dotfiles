@@ -68,4 +68,9 @@ return require('packer').startup(function()
   use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
   -- Greeter
   use 'goolord/alpha-nvim'
+  -- Autopairs
+  use {
+	"windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
 end)
