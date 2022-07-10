@@ -28,6 +28,7 @@ convert $screen1 -scale 40% -scale 250% -blur 10x10 $screen2
 rm $screen1
 # make screenshot gnome background
 gsettings set org.gnome.desktop.background picture-uri "file://$screen2" 2> /dev/null
+# gsettings set org.gnome.desktop.screensaver "file://$screen2"
 # lock screen using gnome-screensaver
 exec gnome-screensaver-command -l &
 

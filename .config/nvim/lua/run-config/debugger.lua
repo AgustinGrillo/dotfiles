@@ -33,6 +33,32 @@ dap.configurations.python = {
   },
 }
 
+-- C/C++ Config
+dap.adapters.cppdbg = {
+  id = 'cppdbg',
+  type = 'executable',
+  command = '/home/agus/programs/vscode-cpptools/extension/debugAdapters/bin/OpenDebugAD7',
+}
+
+dap.configurations.cpp = {
+  {
+    name = "Launch file",
+    type = "cppdbg",
+    request = "launch",
+    program = function()
+      return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
+    end,
+    cwd = '${workspaceFolder}',
+    stopOnEntry = true,
+    setupCommands = {  
+      { 
+         text = '-enable-pretty-printing',
+         description =  'enable pretty printing',
+         ignoreFailures = false 
+      },
+    },
+  },
+}
 
 -- UI Config
 vim.fn.sign_define('DapBreakpoint', {text='🟥', texthl='', linehl='', numhl=''})
@@ -73,6 +99,7 @@ dapui.setup({
     {
         elements = {
             'repl',
+            'console',
         },
         size = 10,
         position = 'bottom',
@@ -81,7 +108,7 @@ dapui.setup({
   floating = {
     max_height = nil, -- These can be integers or a float between 0 and 1.
     max_width = nil, -- Floats will be treated as percentage of your screen.
-    border = "single", -- Border style. Can be "single", "double" or "rounded"
+    border = "rounded", -- Border style. Can be "single", "double" or "rounded"
     mappings = {
       close = { "q", "<Esc>" },
     },
