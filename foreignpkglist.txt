@@ -1,0 +1,15 @@
+gnome-screensaver
+google-chrome
+lightdm-webkit-theme-sequoia-git
+lxpolkit-git
+networkmanager-dmenu-git
+nvim-packer-git
+nvm
+paru
+ros-noetic-desktop
+ros-noetic-ros-base
+ros-noetic-roslaunch
+slack-desktop
+spotify
+ttf-ms-fonts
+yay
