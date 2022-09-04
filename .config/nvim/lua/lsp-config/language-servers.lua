@@ -91,6 +91,9 @@ for _, lsp in pairs(servers) do
             }
         }
     elseif lsp == 'clangd' then
+        -- NOTE: For more complex projects, 'compile_commands.json' is needed.
+        -- If your project builds with CMake, it can generate this file. You should enable it with:
+        -- "cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1"
         require('lspconfig')[lsp].setup {
             on_attach = on_attach,
             capabilities = capabilities,
