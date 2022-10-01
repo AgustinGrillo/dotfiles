@@ -264,6 +264,7 @@
 	<keybind key="XF86AudioRaiseVolume"><action name="Execute"><command>bash -c '~/.local/bin/scripts/change-volume up'</command></action></keybind>
     <keybind key="XF86AudioLowerVolume"><action name="Execute"><command>bash -c '~/.local/bin/scripts/change-volume down'</command></action></keybind>
     <keybind key="XF86AudioMute"><action name="Execute"><command>bash -c '~/.local/bin/scripts/change-volume mute'</command></action></keybind>
+    <keybind key="XF86AudioMicMute"><action name="Execute"><command>pactl set-source-mute @DEFAULT_SOURCE@ toggle</command></action></keybind>
    
 # Media Keys
     
@@ -806,11 +807,11 @@
     <application name="kitty">
       <position force="yes">
         <x>center</x>
-        <y>55</y>
+        <y>15</y>
       </position>
         <size>
-          <width>98%</width>
-          <height>94%</height>
+          <width>70%</width>
+          <height>75%</height>
         </size>
       <decor>no</decor>
     </application>
