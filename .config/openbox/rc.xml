@@ -807,11 +807,11 @@
     <application name="kitty">
       <position force="yes">
         <x>center</x>
-        <y>55</y>
+        <y>15</y>
       </position>
         <size>
-          <width>98%</width>
-          <height>94%</height>
+          <width>70%</width>
+          <height>75%</height>
         </size>
       <decor>no</decor>
     </application>
