@@ -5,7 +5,7 @@ This rice is an Ubuntu adaptation and customization of [TheSuburbanExorcist](htt
 *Caveat*: Work in progress :snail:
 
 ## ![#fc8993](http://via.placeholder.com/15.png/fc8993/000000?text=+)  Configuration
-- OS: Ubuntu 18.04 LTE / 20.04 LTE
+- OS: Ubuntu 20.04 LTE / 22.04 LTE
 - WM: Openbox
 - Terminal: Kitty
 - Shell: ZSH
