@@ -104,6 +104,7 @@ source $ZSH/oh-my-zsh.sh
 
 ### Additions ###
 
+export EDITOR='vim'
 export PATH="$HOME/.local/bin:$PATH"
 #source "$HOME/.cargo/env"
 
@@ -112,6 +113,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Alias
 alias v="nvim"
+alias bat="batcat"
 ############ ROS ###################
 #source /opt/ros/melodic/setup.zsh
 
