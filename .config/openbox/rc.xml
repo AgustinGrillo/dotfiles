@@ -798,10 +798,10 @@
         <x>center</x>
         <y>center</y>
       </position>
-        <size>
-          <width>100%</width>
-          <height>100%</height>
-        </size>
+      <size>
+        <width>100%</width>
+        <height>100%</height>
+      </size>
       <decor>no</decor>
     </application>
     <application name="kitty">
@@ -809,10 +809,10 @@
         <x>center</x>
         <y>15</y>
       </position>
-        <size>
-          <width>70%</width>
-          <height>75%</height>
-        </size>
+      <size>
+        <width>70%</width>
+        <height>75%</height>
+      </size>
       <decor>no</decor>
     </application>
     <application name="xfce4-terminal">
