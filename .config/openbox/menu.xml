@@ -9,12 +9,12 @@
 	</item>
 	<item label="Openbox RC" icon="/home/aidoneus/.icons/Custom-apks/Crayons/notes_2_alt.png">
 		<action name="Execute">
-			<command>gedit .config/openbox/rc.xml</command>
+			<command>vim .config/openbox/rc.xml</command>
 		</action>
 	</item>
 	<item label="Openbox Autostart" icon="/home/aidoneus/.icons/Custom-apks/Crayons/lockscreen_start.png">
 		<action name="Execute">
-			<command>gedit .config/openbox/autostart</command>
+			<command>vim .config/openbox/autostart</command>
 		</action>
 	</item>
 </menu>
