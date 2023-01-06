@@ -1,8 +1,10 @@
 # Script to set theme.
 
 # TODO: Receive theme as argument
-theme="light"  # dark or light
-theme="dark"  # dark or light
+# TODO: Add default argument
+theme="$1"  # dark or light
+# theme="light"  # dark or light
+# theme="dark"  # dark or light
 
 # Change kitty config
 new_conf_path="./../../../.config/kitty/kitty.${theme}.conf"
@@ -18,3 +20,4 @@ nitrogen --set-zoom-fill "./../../../walls/${theme}.jpg"
 # Change gtk theme
 cp "./../../../.config/gtk-3.0/settings.${theme}.ini" ./../../../.config/gtk-3.0/settings.ini
 
+# TODO: Change global colors
