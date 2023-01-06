@@ -14,3 +14,7 @@ cp "./../../../.config/nvim/lua/colorschemes-config/catppuccin.${theme}.lua" ./.
 
 # Change wallpaper
 nitrogen --set-zoom-fill "./../../../walls/${theme}.jpg"
+
+# Change gtk theme
+cp "./../../../.config/gtk-3.0/settings.${theme}.ini" ./../../../.config/gtk-3.0/settings.ini
+
