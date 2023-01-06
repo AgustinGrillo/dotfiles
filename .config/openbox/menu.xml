@@ -45,6 +45,17 @@
 	<separator/>
 	<menu id="new menu 1" icon="/home/agus/.icons/cherry/48x48/apps/gourmet.svg"/>
 	<separator/>
+	<item label="Light" icon="/home/agus/.icons/cherry/16x16/actions/lighttable.svg">
+		<action name="Execute">
+            <command>bash ~/.local/bin/scripts/set_color_theme.sh light</command>
+		</action>
+	</item>
+	<item label="Dark" icon="/home/agus/.icons/cherry/symbolic/status/night-light-symbolic.svg">
+		<action name="Execute">
+            <command>bash ~/.local/bin/scripts/set_color_theme.sh dark</command>
+		</action>
+	</item>
+	<separator/>
 	<item label="Log Out" icon="/home/agus/.icons/cherry/48x48/apps/gnome-session-hebirnate.svg">
 		<action name="Exit">
 			<prompt>yes</prompt>
