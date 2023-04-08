@@ -190,8 +190,8 @@
 
 <!--Window Resizing-->
       <!--<keybind key="W-r"><action name="Resize"/></keybind>--> 
-      <keybind key="W-S-j"><action name="Resize"/><edge>left</edge></keybind>
-      <keybind key="W-S-k"><action name="Resize"/><edge>right</edge></keybind>
+      <!-- <keybind key="W-S-j"><action name="Resize"/><edge>left</edge></keybind> -->
+      <!-- <keybind key="W-S-k"><action name="Resize"/><edge>right</edge></keybind> -->
  
   # Desktop Switching
 
@@ -215,25 +215,22 @@
   <keybind key="W-S-8"><action name="SendToDesktop"><to>8</to></action></keybind>
   <keybind key="W-S-9"><action name="SendToDesktop"><to>9</to></action></keybind>
   <keybind key="W-S-0"><action name="SendToDesktop"><to>10</to></action></keybind>
-  <keybind key="C-A-Left"><action name="GoToDesktop"><to>left</to><wrap>no</wrap></action></keybind>
-  <keybind key="C-A-Right"><action name="GoToDesktop"><to>right</to><wrap>no</wrap></action></keybind>
-  <keybind key="C-A-Up"><action name="GoToDesktop"><to>up</to><wrap>no</wrap></action></keybind>
-  <keybind key="C-A-Down"><action name="GoToDesktop"><to>down</to><wrap>no</wrap></action></keybind>
   <keybind key="W-S-Left"><action name="SendToDesktop"><to>left</to></action></keybind>
   <keybind key="W-S-Right"><action name="SendToDesktop"><to>right</to></action></keybind>
   
 # Window Switching
   
   <keybind key="W-d"><action name="ToggleShowDesktop"/></keybind>
-  <keybind key="W-q"><action name="Close"/></keybind>
-  <keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind>
+  <keybind key="W-S-q"><action name="Close"/></keybind>
+  <!-- <keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind> -->
   <keybind key="W-S-Up"><action name="ToggleMaximize"/></keybind>
+  <keybind key="W-S-k"><action name="ToggleMaximize"/></keybind>
   <keybind key="W-S-Down"><action name="Minimize"/><action name="Minimize"/><action name="Iconify"/></keybind>
-  <keybind key="W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind>
-  <keybind key="W-A-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
+  <keybind key="W-S-j"><action name="Minimize"/><action name="Minimize"/><action name="Iconify"/></keybind>
+  <!-- <keybind key="W-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind> -->
+  <!-- <keybind key="W-A-space"><action name="ShowMenu"><menu>root-menu</menu></action></keybind> -->
   <keybind key="A-Tab"><action name="NextWindow"><finalactions><action name="Focus"/><action name="Raise"/><action name="Unshade"/></finalactions></action></keybind>
   <keybind key="A-S-Tab"><action name="PreviousWindow"><finalactions><action name="Focus"/><action name="Raise"/><action name="Unshade"/></finalactions></action></keybind>
-<!--  <keybind key="C-A-Tab"><action name="NextWindow"><panels>yes</panels><desktop>yes</desktop><finalactions><action name="Focus"/><action name="Raise"/><action name="Unshade"/></finalactions></action></keybind>-->
   
   
 # Keybindings for window switching with the arrow keys --&gt;
@@ -278,46 +275,40 @@
     <keybind key="XF86MonBrightnessDown"><action name="Execute"><command>bash -c '~/.local/bin/scripts/change-brightness down'</command></action></keybind>
     <keybind key="0x43"><action name="Execute"><command>brightnessctl set 0%</command></action></keybind>
     
-<!-- Window Tiling -->
+# Window Tiling 
 
+    # Arrows
     <keybind key="W-Left"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>+-0</x></action></keybind>
     <keybind key="W-Right"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>-0</x></action></keybind>   
-<!--    <keybind key="W-Left"><action name="Unmaximize"/><action name="MoveResizeTo"><width>50%</width><x>0</x></action></keybind> -->
-<!--    <keybind key="W-Right"><action name="Unmaximize"/><action name="MoveResizeTo"><width>50%</width><x>-0</x></action></keybind> -->
     <keybind key="W-Up"><action name="Unmaximize"/><action name="MoveResizeTo"><height>50%</height><y>0</y></action></keybind> 
     <keybind key="W-Down"><action name="Unmaximize"/><action name="MoveResizeTo"><height>50%</height><y>-0</y></action></keybind> 
-    <keybind key="W-C-a"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>+-0</x><y>+-0</y></action></keybind>
-    <keybind key="W-C-z"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>+-0</x><y>-0</y></action></keybind>
-    <keybind key="W-C-s"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>-0</x><y>+-0</y></action></keybind>
-    <keybind key="W-C-x"><action name="UnmaximizeFull"/><action name="MoveResizeTo"><width>50%</width><height>50%</height><x>-0</x><y>-0</y></action></keybind>
 
-    <keybind key="W-C-Right"><action name="MoveRelative"><x>1</x><y>0</y></action></keybind>
-    <keybind key="W-C-Up"><action name="MoveRelative"><x>0</x><y>-1</y></action></keybind>
-    <keybind key="W-C-Left"><action name="MoveRelative"><x>-1</x><y>0</y></action></keybind>
-    <keybind key="W-C-Down"><action name="MoveRelative"><x>0</x><y>1</y></action></keybind>
+    <!-- <keybind key="W-C-Right"><action name="MoveRelative"><x>10</x><y>0</y></action></keybind> -->
+    <!-- <keybind key="W-C-Up"><action name="MoveRelative"><x>0</x><y>-10</y></action></keybind> -->
+    <!-- <keybind key="W-C-Left"><action name="MoveRelative"><x>-10</x><y>0</y></action></keybind> -->
+    <!-- <keybind key="W-C-Down"><action name="MoveRelative"><x>0</x><y>10</y></action></keybind> -->
+
+    # hjkl
+    <keybind key="W-h"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>+-0</x></action></keybind>
+    <keybind key="W-l"><action name="UnmaximizeFull"/><action name="MaximizeVert"/><action name="MoveResizeTo"><width>50%</width><x>-0</x></action></keybind>   
+    <keybind key="W-k"><action name="Unmaximize"/><action name="MoveResizeTo"><height>50%</height><y>0</y></action></keybind> 
+    <keybind key="W-j"><action name="Unmaximize"/><action name="MoveResizeTo"><height>50%</height><y>-0</y></action></keybind> 
 	
-#Keybindings for running applications
-#Keybindings for running applications
+# Keybindings for running applications
 
-	<keybind key="W-Return"><action name="Execute"><startupnotify><enabled>true</enabled><name>xfce4-terminal</name></startupnotify><command>xfce4-terminal</command></action></keybind>
 	<keybind key="W-e"><action name="Execute"><startupnotify><enabled>true</enabled><name>nautilus</name></startupnotify><command>nautilus</command></action></keybind>
-	<keybind key="C-A-t"><action name="Execute"><startupnotify><enabled>true</enabled><name>kitty</name></startupnotify><command>kitty</command></action></keybind>
-	<keybind key="W-S-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>reconfigure</name></startupnotify><command>openbox --reconfigure</command></action></keybind>
+	<keybind key="W-t"><action name="Execute"><startupnotify><enabled>true</enabled><name>kitty</name></startupnotify><command>kitty</command></action></keybind>
 	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome</command></action></keybind>
-	<keybind key="W-v"><action name="Execute"><startupnotify><enabled>true</enabled><name>Vivaldi</name></startupnotify><command>vivaldi-stable</command></action></keybind>
-	<keybind key="W-n"><action name="Execute"><startupnotify><enabled>true</enabled><name>Notion</name></startupnotify><command>notion-app</command></action></keybind>
+
 	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show windowcd -show-icons -window-thumbnail -modi windowcd -theme ~/.config/rofi/themes/launcher</command></action></keybind>
-<!--
-	<keybind key="A-space"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun</command></action></keybind>
--->
 	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons -theme ~/.config/rofi/themes/launcher</command></action></keybind>
 	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -theme ~/.config/rofi/themes/launcher</command></action></keybind>
-	<keybind key="W-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"</command></action></keybind>
-	<keybind key="W-S-l"><action name="Execute"><startupnotify><enabled>true</enabled><name>suspend</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"</command></action></keybind>
-	<keybind key="W-A-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>redshift</name></startupnotify><command>bash -c '~/.local/bin/scripts/redshift_toggle.sh'</command></action></keybind>
+	<keybind key="W-x"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"</command></action></keybind>
+	<keybind key="W-S-x"><action name="Execute"><startupnotify><enabled>true</enabled><name>suspend</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"</command></action></keybind>
+	<!-- <keybind key="W-A-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>redshift</name></startupnotify><command>bash -c '~/.local/bin/scripts/redshift_toggle.sh'</command></action></keybind> -->
 	
 # change keyboard layout 
-	<keybind key="A-S-x"><action name="Execute"><startupnotify><enabled>true</enabled><name>setxkbmap</name></startupnotify><command>bash -c '~/.local/bin/scripts/change-keyboard.sh'</command></action></keybind>
+	<!-- <keybind key="A-S-x"><action name="Execute"><startupnotify><enabled>true</enabled><name>setxkbmap</name></startupnotify><command>bash -c '~/.local/bin/scripts/change-keyboard.sh'</command></action></keybind> -->
 	
 	
 #	Screenshot
@@ -331,7 +322,9 @@
 
 
 #	Power
-	<keybind key="C-S-Delete"><action name="Execute"><startupnotify><enabled>true</enabled><name>powermenu</name></startupnotify><command>~/.config/rofi/scripts/powermenu.sh</command></action></keybind>
+<keybind key="C-S-Delete"><action name="Execute"><startupnotify><enabled>true</enabled><name>powermenu</name></startupnotify><command>~/.config/rofi/scripts/powermenu.sh</command></action></keybind>
+
+
  </keyboard>
   <mouse>
     <dragThreshold>5</dragThreshold>
