@@ -300,9 +300,10 @@
 	<keybind key="W-t"><action name="Execute"><startupnotify><enabled>true</enabled><name>kitty</name></startupnotify><command>kitty</command></action></keybind>
 	<keybind key="W-b"><action name="Execute"><startupnotify><enabled>true</enabled><name>explorer</name></startupnotify><command>google-chrome</command></action></keybind>
 
+	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons -theme ~/.config/rofi/themes/launcher</command></action></keybind>
+	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show window -show-icons -theme ~/.config/rofi/themes/launcher</command></action></keybind>
 	<keybind key="W-w"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show windowcd -show-icons -window-thumbnail -modi windowcd -theme ~/.config/rofi/themes/launcher</command></action></keybind>
-	<keybind key="W-s"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -show-icons -theme ~/.config/rofi/themes/launcher</command></action></keybind>
-	<keybind key="W-a"><action name="Execute"><startupnotify><enabled>true</enabled><name>rofi</name></startupnotify><command>rofi -show drun -theme ~/.config/rofi/themes/launcher</command></action></keybind>
+
 	<keybind key="W-x"><action name="Execute"><startupnotify><enabled>true</enabled><name>screenlock</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"</command></action></keybind>
 	<keybind key="W-S-x"><action name="Execute"><startupnotify><enabled>true</enabled><name>suspend</name></startupnotify><command>sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"</command></action></keybind>
 	<!-- <keybind key="W-A-r"><action name="Execute"><startupnotify><enabled>true</enabled><name>redshift</name></startupnotify><command>bash -c '~/.local/bin/scripts/redshift_toggle.sh'</command></action></keybind> -->
