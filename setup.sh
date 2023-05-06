@@ -16,7 +16,6 @@ ln -sfd ~/Documents/dotfiles/.icons  ~/.icons
 tar -xf ~/.icons/cherry.tar.gz -C ~/.icons
 rm -r ~/.config/bat ~/.config/dunst ~/.config/kitty ~/.config/neofetch ~/.config/networkmanager-dmenu ~/.config/nitrogen ~/.config/openbox ~/.config/redshift ~/.config/rofi ~/.config/tint2 ~/.config/zathura 
 ln -sfd ~/Documents/dotfiles/.config/*  ~/.config 
-ln -sfd ~/Documents/dotfiles/.color-toys  ~/.color-toys
 ln -sfd ~/Documents/dotfiles/walls  ~/walls
 mkdir ~/screensaver
 ln -sf ~/Documents/dotfiles/Oblivion-dark.Xresources  ~/Oblivion-dark.Xresources 
