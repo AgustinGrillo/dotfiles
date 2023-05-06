@@ -22,3 +22,7 @@ nitrogen --set-zoom-fill "${SCRIPT_DIR}/../../../walls/${theme}.jpg"
 cp "${SCRIPT_DIR}/../../../.config/gtk-3.0/settings.${theme}.ini" "${SCRIPT_DIR}/../../../.config/gtk-3.0/settings.ini"
 
 # TODO: Change global colors
+# Change Rofi colors
+echo '@import "colors/'${theme}'.rasi"' > "${SCRIPT_DIR}/../../../.config/rofi/themes/colors/color_picker.rasi"
+# Change tint2 colors
+# killall -SIGUSR1 tint2
