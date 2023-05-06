@@ -19,7 +19,7 @@ configuration {
   window-format: "{w} {c}";
 }
 
-@import "colors/pastel_blue.rasi"
+@import "colors/color_picker.rasi"
 
 * {
   font: "Iosevka FT Regular 10.5";

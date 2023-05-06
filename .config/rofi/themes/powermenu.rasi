@@ -16,7 +16,7 @@ configuration {
 	sidebar-mode: 					false;
 }
 
-@import "colors/pastel_blue.rasi"
+@import "colors/color_picker.rasi"
 
 window {
     transparency:                   "real";
