@@ -1,0 +1,21 @@
+/* colors */
+
+/* #1f282e */
+/* #7e8891 */
+/* #efcecd */
+/* #d57a76 */
+/* #923226 */
+
+* {
+  al:      #00000000;
+  bg:      #1f282e;
+  se:      #7e8891;
+  fg:      #efcecd;
+  ac:      #d57a76;
+  red:     #fc8993;
+  green:   #89e19c;
+  yellow:  #fbdf90;
+  blue:    #a7bdfb;
+  purple:  #d990cd;
+  cyan:    #81d4ee;
+}
