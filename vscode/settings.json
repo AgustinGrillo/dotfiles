@@ -1,0 +1,19 @@
+{
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "haskell.manageHLS": "GHCup",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 1,
+    "editor.minimap.enabled": false,
+
+    // Zen Mode
+    "zenMode.centerLayout": false,
+    "zenMode.hideTabs": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.hideStatusBar": false,
+    "zenMode.silentNotifications": false,
+    // "workbench.settings.editor": "json",
+
+    // vim
+    "vim.leader": "<space>"
+}

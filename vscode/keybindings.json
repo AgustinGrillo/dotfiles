@@ -1,0 +1,68 @@
+// Place your key bindings in this file to override the defaults
+[
+    // Terminal
+    {
+      "command": "workbench.action.terminal.toggleTerminal",
+      "key": "ctrl+t",
+    },
+
+    // File explorer
+    {
+      "command": "workbench.action.toggleSidebarVisibility",
+      "key": "space e"
+    },
+    // {
+    //   "command": "workbench.files.action.focusFilesExplorer",
+    //   "key": "alt+e",
+    //   "when": "editorTextFocus"
+    // },
+    {
+      "command": "explorer.newFile",
+      "key": "a",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "renameFile",
+      "key": "r",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.cut",
+      "key": "x",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.copy",
+      "key": "c",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "filesExplorer.paste",
+      "key": "p",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+      "command": "deleteFile",
+      "key": "d",
+      "when": "filesExplorerFocus && !inputFocus"
+    },
+
+    // Zen Mode
+    {
+        "key": "escape escape",
+        "command": "-workbench.action.exitZenMode",
+        "when": "inZenMode"
+    },
+
+    // Vim
+    {
+        "key": "alt+,",
+        "command": "extension.vim_shift+tab",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "alt+.",
+        "command": "extension.vim_tab",
+        "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+]
