@@ -4,6 +4,10 @@
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 1,
     "editor.minimap.enabled": false,
+    "editor.lineNumbers": "relative",
+    "editor.smoothScrolling": true,
+    "editor.stickyScroll.enabled": true,
+    "editor.wordWrap": "on",
 
     // Zen Mode
     "zenMode.centerLayout": false,
@@ -12,8 +16,87 @@
     "zenMode.hideLineNumbers": false,
     "zenMode.hideStatusBar": false,
     "zenMode.silentNotifications": false,
-    // "workbench.settings.editor": "json",
 
     // vim
-    "vim.leader": "<space>"
-}
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // File Eplorer
+        {
+            "before": ["<leader>", "e"],
+            "commands": [
+              "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        // LSP
+        {
+            "before": [
+              "<leader>",
+              "R"
+            ],
+            "commands": [
+              "editor.action.rename"
+            ]
+        },
+        {
+          "before": [
+            "<leader>",
+            "c",
+            "a"
+          ],
+          "commands": [
+            "editor.action.quickFix"
+          ]
+        },
+        {
+          "before": [
+            "<leader>",
+            "g",
+            "d"
+          ],
+          "commands": [
+            "editor.action.revealDefinition"
+          ]
+        },
+        {
+          "before": [
+            "<leader>",
+            "g",
+            "D"
+          ],
+          "commands": [
+            "editor.action.goToTypeDefinition"
+          ]
+        },
+        {
+          "before": [
+            "<leader>",
+            "g",
+            "i"
+          ],
+          "commands": [
+            "editor.action.goToImplementation"
+          ]
+        },
+        {
+          "before": [
+            "<leader>",
+            "g",
+            "r"
+          ],
+          "commands": [
+            "editor.action.goToReferences"
+          ]
+        },
+        {
+          "before": [
+            "<leader>",
+            "F",
+          ],
+          "commands": [
+            "editor.action.formatDocument"
+          ]
+        },
+    ],
+
+  }
