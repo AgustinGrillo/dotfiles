@@ -24,7 +24,7 @@ power=""
 # Variable passed to rofi
 options="$keyboard\n$redshift\n$wifi\n$bluetooth\n$power"
 
-chosen="$(echo -e "$options" | $rofi_command -p "$time_icon $time     |     $date_icon  $date     |     $battery_icon  $battery" -dmenu -selected-row 2)"
+chosen="$(echo -e "$options" | $rofi_command -p "   $time_icon $time            $date_icon  $date            $battery_icon  $battery" -dmenu -selected-row 2)"
 case $chosen in
     $keyboard)
         ~/.config/rofi/scripts/keyboard-layout.sh
