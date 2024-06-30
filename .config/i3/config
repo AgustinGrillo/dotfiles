@@ -18,11 +18,15 @@ default_floating_border pixel 5
 hide_edge_borders smart
 
 # Colors
-set_from_resource $blue i3wm.color6
-set_from_resource $text i3wm.color4
+# set_from_resource $blue i3wm.color4 #a7bdfb
+set $blue #93A6DE
+set_from_resource $black i3wm.color0 #1d212a
+set $border #566180
 
 # Set colors
-# client.focused $blue $blue $text $blue $blue
+# https://thomashunter.name/i3-configurator/
+# class                 border    bground text    indicator child_border
+client.focused          $border   $blue   $black  $blue     $border
 
 ##########################
 ### Autostart programs ###
@@ -179,22 +183,17 @@ bindsym $mod+r mode "resize"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 30 px or 30 ppt
-        bindsym j resize grow height 30 px or 30 ppt
-        bindsym k resize shrink height 30 px or 30 ppt
-        bindsym l resize grow width 30 px or 30 ppt
+        set $resize_growth 10 
+        bindsym h resize shrink width $resize_growth px or $resize_growth ppt
+        bindsym j resize grow height $resize_growth px or $resize_growth ppt
+        bindsym k resize shrink height $resize_growth px or $resize_growth ppt
+        bindsym l resize grow width $resize_growth px or $resize_growth ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 30 px or 30 ppt
-        bindsym Down resize grow height 30 px or 30 ppt
-        bindsym Up resize shrink height 30 px or 30 ppt
-        bindsym Right resize grow width 30 px or 30 ppt
+        bindsym Left resize shrink width $resize_growth px or $resize_growth ppt
+        bindsym Down resize grow height $resize_growth px or $resize_growth ppt
+        bindsym Up resize shrink height $resize_growth px or $resize_growth ppt
+        bindsym Right resize grow width $resize_growth px or $resize_growth ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
@@ -213,4 +212,3 @@ bindsym Control+Shift+Delete exec --no-startup-id bash ~/.config/rofi/scripts/po
 # Screensaver
 bindsym $mod+x exec --no-startup-id sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"
 bindsym $mod+Shift+x exec --no-startup-id sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"
-exec --no-startup-id sleep 30 && gnome-screensaver
