@@ -33,8 +33,6 @@ client.focused          $border   $blue   $black  $blue     $border
 ##########################
 exec --no-startup-id nitrogen --restore 
 
-exec --no-startup-id tint2
-
 exec --no-startup-id dunst
 
 exec --no-startup-id xfce4-power-manager
@@ -212,3 +210,6 @@ bindsym Control+Shift+Delete exec --no-startup-id bash ~/.config/rofi/scripts/po
 # Screensaver
 bindsym $mod+x exec --no-startup-id sh -c "/home/$USER/.local/bin/scripts/screensaver.sh -f"
 bindsym $mod+Shift+x exec --no-startup-id sh -c "/home/$USER/.local/bin/scripts/screensaver_and_suspend.sh -f"
+
+# Settings
+bindsym $mod+m exec --no-startup-id bash ~/.config/rofi/scripts/settings.sh

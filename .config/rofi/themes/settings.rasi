@@ -1,0 +1,107 @@
+/*
+ *
+ * Author  : Aditya Shakya
+ * Mail    : adi1090x@gmail.com
+ * Github  : @adi1090x
+ * Twitter : @adi1090x
+ *
+ */
+
+configuration {
+	font:							"FantasqueSansMono Nerd Font 22";
+    show-icons:                     false;
+	icon-theme: 					"Papirus";
+    drun-display-format:            "{name}";
+    disable-history:                false;
+	sidebar-mode: 					false;
+}
+
+@import "colors/color_picker.rasi"
+
+window {
+    transparency:                   "real";
+    background-color:               @bg;
+    text-color:                     @fg;
+    border-radius:                  0px;
+	width:							100%;
+	height:							100%;
+}
+
+prompt {
+    enabled: 						true;
+    padding:                        1% 1% 1% 0%;
+	background-color: 				@bg;
+	text-color: 					@se;
+}
+
+textbox-prompt-colon {
+	expand: 						false;
+	str: 							"";
+	background-color: 				@bg;
+	text-color: 					@se;
+    padding:                        1% 0.5% 1% 0.5%;
+}
+
+inputbar {
+	children: 						[ textbox-prompt-colon, prompt ];
+    background-color:               @bg;
+    text-color:                     @se;
+    expand:                         false;
+    border:                  		0% 0% 0.2% 0.2%;
+    border-radius:                  15px;
+    border-color:                  	@border;
+    margin:                         0% 59.3% 0% 0%;
+    padding:                        0.5%;
+    position:                       center;
+}
+
+listview {
+    background-color:               @bg;
+    margin:                         0% 0% 0% 0%;
+    spacing:                        2%;
+    cycle:                          true;
+    dynamic:                        true;
+    layout:                         horizontal;
+}
+
+mainbox {
+    background-color:               @bg;
+    children:                       [ inputbar, listview ];
+    spacing:                        5%;
+    padding:                        32.50% 0% 0% 13.25%;
+}
+
+element {
+    background-color:               @gb;
+    text-color:                     @fg;
+    orientation:                    horizontal;
+    border-radius:                  25px;
+}
+
+element-text {
+    background-color: 				@bg;
+    text-color:       				inherit;
+	font:							"feather 64";
+    expand:                         true;
+    horizontal-align:               0.5;
+    vertical-align:                 0.5;
+    margin:                         6.5% 4% 6.5% 4%;
+}
+
+
+element normal {
+    background-color:               @bg;
+    text-color:                     @se;
+    border:                  		0% 0% 0.2% 0.2%;
+    border-radius:                  25px;
+    border-color:                  	@bg;
+}
+
+element selected {
+    background-color:               @bg;
+    text-color:                     @fg;
+    border:                  		0% 0% 0.2% 0.2%;
+    border-radius:                  25px;
+    border-color:                  	@bg;
+}
+
