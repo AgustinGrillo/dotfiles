@@ -11,7 +11,7 @@ font pango:monospace 10
 
 # Borders
 # default_border none
-default_border pixel 1
+default_border pixel 2
 default_floating_border pixel 5
 
 # Hide borders 
@@ -27,6 +27,9 @@ set $border #566180
 # https://thomashunter.name/i3-configurator/
 # class                 border    bground text    indicator child_border
 client.focused          $border   $blue   $black  $blue     $border
+
+# Avoid mouse follow
+focus_follows_mouse no
 
 ##########################
 ### Autostart programs ###
@@ -83,6 +86,8 @@ bindsym $mod+Shift+q kill
 # start program launcher
 # bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+a exec --no-startup-id rofi -show drun -show-icons -theme ~/.config/rofi/themes/launcher
+bindsym $mod+s exec --no-startup-id rofi -show window -show-icons -theme ~/.config/rofi/themes/launcher
+bindsym $mod+z exec --no-startup-id rofi -show windowcd -show-icons -theme ~/.config/rofi/themes/launcher
 
 # change focus
 bindsym $mod+h focus left
@@ -118,7 +123,7 @@ bindsym $mod+Control+v split v
 bindsym $mod+space fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+# bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 

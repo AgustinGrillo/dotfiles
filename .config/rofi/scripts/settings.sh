@@ -18,7 +18,8 @@ rofi_command="rofi -theme $dir/$theme"
 keyboard=""
 redshift=$(~/.config/tint2/executor/brightness-icon.sh)  # =""
 wifi=$(~/.config/tint2/executor/network icon)  # =" "
-bluetooth=$(~/.local/bin/rofi-bluetooth --status)  # =""
+# bluetooth=$(~/.local/bin/rofi-bluetooth --status)  # =""
+bluetooth=""
 power=""
 
 # Variable passed to rofi

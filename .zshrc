@@ -112,6 +112,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Alias
 alias v="nvim"
+alias v9="NVIM_APPNAME=nvim_0.9 nvim_0.9.5"
 alias bat="batcat"
 ############ ROS ###################
 #source /opt/ros/melodic/setup.zsh
