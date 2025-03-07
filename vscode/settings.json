@@ -1,8 +1,11 @@
 {
+    // "editor.fontFamily": "JetBrains Mono",
+    "editor.fontFamily": "'Monaspace Neon', monospace",
+    "editor.fontSize": 13
     "workbench.colorTheme": "Catppuccin Mocha",
     "haskell.manageHLS": "GHCup",
     "workbench.iconTheme": "material-icon-theme",
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 0.1,
     "editor.minimap.enabled": false,
     "editor.lineNumbers": "relative",
     "editor.smoothScrolling": true,
