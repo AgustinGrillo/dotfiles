@@ -1,7 +1,7 @@
 # Reference: https://github.com/i3/i3/blob/next/etc/config
 start-at-login = true
 after-startup-command = [
-  'exec-and-forget borders active_color=0xff85929e inactive_color=0xff494d64 width=4.0 hidpi=on'
+  # 'exec-and-forget borders active_color=0xff85929e inactive_color=0xff494d64 width=4.0 hidpi=on'
 ]
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
@@ -40,10 +40,12 @@ automatically-unhide-macos-hidden-apps = true
     cmd-b = '''exec-and-forget open -n /Applications/'Google Chrome.app''''
     # TODO: Improve finder
     cmd-n = 'exec-and-forget open ~'
-    # TODO: Fuzzy find opened windows
     cmd-a = 'exec-and-forget open -n /System/Applications/Launchpad.app'
-    # cmd-s = TODO
     cmd-m = '''exec-and-forget open -n /System/Applications/'System Settings.app''''
+
+    cmd-s = 'exec-and-forget aerospace list-windows --all --format "%{workspace}%{right-padding} | %{app-name}" | choose'
+    cmd-d = 'exec-and-forget aerospace list-windows --workspace focused --format "%{workspace}%{right-padding} | %{app-name}" | choose'
+
     # TODO: Screenshot bindings
     # cmd-p = '''exec-and-forget screencapture ~/Pictures/test.jpg''''
 
