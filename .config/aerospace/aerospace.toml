@@ -43,8 +43,8 @@ automatically-unhide-macos-hidden-apps = true
     cmd-a = 'exec-and-forget open -n /System/Applications/Launchpad.app'
     cmd-m = '''exec-and-forget open -n /System/Applications/'System Settings.app''''
 
-    cmd-s = 'exec-and-forget aerospace list-windows --all --format "%{workspace}%{right-padding} | %{app-name}" | choose'
-    cmd-d = 'exec-and-forget aerospace list-windows --workspace focused --format "%{workspace}%{right-padding} | %{app-name}" | choose'
+    cmd-s = 'exec-and-forget aerospace list-windows --all --format "%{workspace}%{right-padding} | %{app-name}%{right-padding}  (%{window-id})" | choose | cut -d"(" -f2 | cut -d")" -f1 | xargs -I {} aerospace focus --window-id {}'
+    cmd-d = 'exec-and-forget aerospace list-windows --workspace focused --format "%{workspace}%{right-padding} | %{app-name}%{right-padding}  (%{window-id})" | choose | cut -d"(" -f2 | cut -d")" -f1 | xargs -I {} aerospace focus --window-id {}'
 
     # TODO: Screenshot bindings
     # cmd-p = '''exec-and-forget screencapture ~/Pictures/test.jpg''''
