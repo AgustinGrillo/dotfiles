@@ -133,4 +133,30 @@
           "value": 5,
           },
     },
+    // Maximize Pane
+    {
+        "key": "alt+space",
+        "command": "workbench.action.toggleMaximizeEditorGroup"
+    },
+    // Next/Previous occurence
+    {
+        "key": "ctrl+n",
+        "command": "editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "f7",
+        "command": "-editor.action.wordHighlight.next",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "editor.action.wordHighlight.prev",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
+    {
+        "key": "shift+f7",
+        "command": "-editor.action.wordHighlight.prev",
+        "when": "editorTextFocus && hasWordHighlights"
+    },
 ]

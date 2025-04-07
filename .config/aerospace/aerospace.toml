@@ -35,6 +35,10 @@ automatically-unhide-macos-hidden-apps = true
     outer.right =      10
 
 [mode.main.binding]
+    # Mode switch
+    cmd-r = 'mode resize'
+    cmd-p = 'mode personal'
+
     # Launch apps
     cmd-t = 'exec-and-forget open -n /Applications/kitty.app'
     cmd-b = '''exec-and-forget open -n /Applications/'Google Chrome.app''''
@@ -76,13 +80,11 @@ automatically-unhide-macos-hidden-apps = true
 
     cmd-shift-f = 'layout floating tiling' # 'floating toggle' in i3
 
-    # Not supported, because this command is redundant in AeroSpace mental model.
-    # See: https://nikitabobko.github.io/AeroSpace/guide#floating-windows
-    #cmd-space = 'focus toggle_tiling_floating'
-
     # `focus parent`/`focus child` are not yet supported, and it's not clear whether they
     # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
     # cmd-a = 'focus parent'
+
+    cmd-shift-c = 'reload-config'
 
     cmd-1 = 'workspace 1'
     cmd-2 = 'workspace 2'
@@ -106,21 +108,103 @@ automatically-unhide-macos-hidden-apps = true
     cmd-shift-9 = 'move-node-to-workspace 9 --focus-follows-window'
     cmd-shift-0 = 'move-node-to-workspace 10 --focus-follows-window'
 
+[mode.personal.binding]
+    # Mode switch
+    cmd-r = 'mode resize'
+    cmd-p = 'mode main'
+
+    # Launch apps
+    cmd-t = 'exec-and-forget open -n /Applications/kitty.app'
+    cmd-b = '''exec-and-forget open -n /Applications/'Google Chrome.app''''
+    # TODO: Improve finder
+    cmd-n = 'exec-and-forget open ~'
+    cmd-a = 'exec-and-forget open -n /System/Applications/Launchpad.app'
+    cmd-m = '''exec-and-forget open -n /System/Applications/'System Settings.app''''
+
+    cmd-s = 'exec-and-forget aerospace list-windows --all --format "%{workspace}%{right-padding} | %{app-name}%{right-padding}  (%{window-id})" | choose | cut -d"(" -f2 | cut -d")" -f1 | xargs -I {} aerospace focus --window-id {}'
+    cmd-d = 'exec-and-forget aerospace list-windows --workspace focused --format "%{workspace}%{right-padding} | %{app-name}%{right-padding}  (%{window-id})" | choose | cut -d"(" -f2 | cut -d")" -f1 | xargs -I {} aerospace focus --window-id {}'
+
+    # TODO: Screenshot bindings
+    # cmd-p = '''exec-and-forget screencapture ~/Pictures/test.jpg''''
+
+    # Close app
+    cmd-shift-q = 'close'
+
+    cmd-h = 'focus left'
+    cmd-j = 'focus down'
+    cmd-k = 'focus up'
+    cmd-l = 'focus right'
+
+    cmd-shift-h = 'move left'
+    cmd-shift-j = 'move down'
+    cmd-shift-k = 'move up'
+    cmd-shift-l = 'move right'
+
+    # Consider using 'join-with' command as a 'split' replacement if you want to enable
+    # normalizations
+    cmd-ctrl-h = 'split horizontal'
+    cmd-ctrl-v = 'split vertical'
+
+    cmd-space = 'fullscreen --no-outer-gaps'
+    # cmd-space = 'macos-native-fullscreen'  # clunky
+
+    # cmd-s = 'layout v_accordion' # 'layout stacking' in i3
+    cmd-w = 'layout h_accordion' # 'layout tabbed' in i3
+    cmd-e = 'layout tiles horizontal vertical' # 'layout toggle split' in i3
+
+    cmd-shift-f = 'layout floating tiling' # 'floating toggle' in i3
+
+    # `focus parent`/`focus child` are not yet supported, and it's not clear whether they
+    # should be supported at all https://github.com/nikitabobko/AeroSpace/issues/5
+    # cmd-a = 'focus parent'
+
     cmd-shift-c = 'reload-config'
 
-    cmd-r = 'mode resize'
+    cmd-1 = 'workspace 11'
+    cmd-2 = 'workspace 12'
+    cmd-3 = 'workspace 13'
+    cmd-4 = 'workspace 14'
+    cmd-5 = 'workspace 15'
+    cmd-6 = 'workspace 16'
+    cmd-7 = 'workspace 17'
+    cmd-8 = 'workspace 18'
+    cmd-9 = 'workspace 19'
+    cmd-0 = 'workspace 20'
+
+    cmd-shift-1 = 'move-node-to-workspace 11 --focus-follows-window'
+    cmd-shift-2 = 'move-node-to-workspace 12 --focus-follows-window'
+    cmd-shift-3 = 'move-node-to-workspace 13 --focus-follows-window'
+    cmd-shift-4 = 'move-node-to-workspace 14 --focus-follows-window'
+    cmd-shift-5 = 'move-node-to-workspace 15 --focus-follows-window'
+    cmd-shift-6 = 'move-node-to-workspace 16 --focus-follows-window'
+    cmd-shift-7 = 'move-node-to-workspace 17 --focus-follows-window'
+    cmd-shift-8 = 'move-node-to-workspace 18 --focus-follows-window'
+    cmd-shift-9 = 'move-node-to-workspace 19 --focus-follows-window'
+    cmd-shift-0 = 'move-node-to-workspace 20 --focus-follows-window'
+
 
 [workspace-to-monitor-force-assignment]
-    1 = 'secondary'                  # Non-main monitor in case when there are only two monitors
+    # Non-main monitor in case when there are only two monitors
+    1 = 'secondary'                  
     2 = 'secondary'                  
     3 = 'secondary'                 
     4 = 'secondary'                  
     5 = 'secondary'                
-    6 = 'main'
-    7 = 'main'
-    8 = 'main'
-    9 = 'main'
-    10 = 'main'
+    6 = 'secondary'
+    7 = 'secondary'
+    8 = 'secondary'
+    9 = 'secondary'
+    10 = 'secondary'
+    11 = 'secondary'                  
+    12 = 'secondary'                  
+    13 = 'secondary'                 
+    14 = 'secondary'                  
+    15 = 'secondary'                
+    16 = 'secondary'
+    17 = 'secondary'
+    18 = 'secondary'
+    19 = 'secondary'
+    20 = 'secondary'
 
 [mode.resize.binding]
     h = 'resize width -50'
