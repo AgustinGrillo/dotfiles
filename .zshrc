@@ -107,15 +107,23 @@ export EDITOR='vim'
 export PATH="$HOME/.local/bin:$PATH"
 #source "$HOME/.cargo/env"
 
-#neofetch --source /home/agus/.config/neofetch/art/little_penguin.txt
-#neofetch
-
-# Alias
+# Aliases: Vim
 alias v="nvim"
 alias v9="NVIM_APPNAME=nvim_0.9 nvim_0.9.5"
+# Aliases: Tmux
+alias t="tmux"
+alias tl="tmux list-sessions"
+alias ta="tmux attach"
+alias tn="tmux new-session -s"
+# Aliases: General
 alias bat="batcat"
-############ ROS ###################
-#source /opt/ros/melodic/setup.zsh
+
+# macoOS utils -- start
+# Add brew to path
+export PATH=$PATH:/opt/homebrew/bin
+# Aliases: macOS
+alias ns="nightlight temp"
+# macoOS utils -- end
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
