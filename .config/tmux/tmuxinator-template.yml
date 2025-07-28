@@ -1,0 +1,11 @@
+name: template
+root: <%= @settings["workspace"] %>
+
+startup_window: Editor
+windows:
+  - Editor: v
+  - Run:
+      layout: main-vertical
+      panes:
+        - 
+        - 

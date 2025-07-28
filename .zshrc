@@ -115,6 +115,11 @@ alias t="tmux"
 alias tl="tmux list-sessions"
 alias ta="tmux attach"
 alias tn="tmux new-session -s"
+tnt() {
+  local sess_name="$1"
+  /opt/homebrew/bin/tmuxinator start -p ~/Documents/config/dotfiles/.config/tmux/tmuxinator-template.yml "workspace=$(pwd)" -n "$sess_name"
+}
+
 # Aliases: General
 alias bat="batcat"
 
