@@ -1,6 +1,6 @@
 gui:
-  showIcons: true
-  sidePanelWidth: 0.2 # gives you more space to show things side-by-side
+  sidePanelWidth: 0.25 # gives you more space to show things side-by-side
+  nerdFontsVersion: ""
 
 git:
   paging:
