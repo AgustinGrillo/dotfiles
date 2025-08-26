@@ -60,6 +60,24 @@ else
 	git clone https://github.com/tmux-plugins/tpm "$TPM_DIR"
 fi
 
+echo "Installing nerd font"
+FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.4.0/Monaspace.zip"
+FONT_DEST="${HOME}/.local/share/fonts"
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
+
+mkdir -p "$FONT_DEST"
+if command -v curl >/dev/null 2>&1; then
+  curl -fL "$FONT_URL" -o "$TMP/font.zip"
+else
+  wget -q -O "$TMP/font.zip" "$FONT_URL"
+fi
+
+unzip -o "$TMP/font.zip" -d "$FONT_DEST"
+fc-cache -f "$FONT_DEST"
+echo "Fonts installed to $FONT_DEST"
+
+
 echo "Symlinking dotfiles"
 mkdir ~/screensaver
 stow i3 nvim kitty tmux vim xresources zsh
