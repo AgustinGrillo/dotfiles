@@ -3,10 +3,10 @@
 theme="settings"
 dir="$HOME/.config/rofi/themes"
 
-time_icon=" "
+time_icon=" "
 time=$(date "+%H:%M")
 
-date_icon=" "
+date_icon=" "
 date=$(date "+%a - %b %d")
 
 battery_icon=$(~/.config/tint2/executor/battery-stat.sh icon)
@@ -15,12 +15,13 @@ battery=$(~/.config/tint2/executor/battery-stat.sh percent)
 rofi_command="rofi -theme $dir/$theme"
 
 # Options
-keyboard=""
-redshift=$(~/.config/tint2/executor/brightness-icon.sh)  # =""
-wifi=$(~/.config/tint2/executor/network icon)  # =" "
-# bluetooth=$(~/.local/bin/rofi-bluetooth --status)  # =""
+keyboard=""
+redshift=""
+# wifi=$(~/.config/tint2/executor/brightness-icon.sh)
+wifi=""
+# bluetooth=$(~/.local/bin/rofi-bluetooth --status)
 bluetooth=""
-power=""
+power=""
 
 # Variable passed to rofi
 options="$keyboard\n$redshift\n$wifi\n$bluetooth\n$power"

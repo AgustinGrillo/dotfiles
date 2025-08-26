@@ -6,9 +6,9 @@
 intwifi="wlp3s0"
 intether="eno1"
 
-wifi=""
-wifidisabled=""
-lan=""
+wifi=" "
+wifidisabled=" "
+lan=" "
 
 case $1 in
     status)

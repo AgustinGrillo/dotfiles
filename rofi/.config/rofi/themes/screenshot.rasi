@@ -2,8 +2,8 @@
 
 * {
   /* General */
-  text-font:                            "Comfortaa 12";
-  icon-font:                            "material 15";
+  text-font:                            "Monaspace Nerd Font 12";
+  icon-font:                            "Monaspace Nerd Font 15";
   show-icons:							 true;
   icon-theme: "Crayons";
 

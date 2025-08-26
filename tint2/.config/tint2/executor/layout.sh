@@ -8,7 +8,7 @@ lang=$(setxkbmap -print | awk -F"+" '/xkb_symbols/ {print $2}')
 
 case $1 in 
 	icon)
-		echo  "";; # "⌨ ";;
+		echo  " ";;
 	
 	layout)
 		echo $lang ;;

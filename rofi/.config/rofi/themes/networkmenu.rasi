@@ -22,7 +22,7 @@ configuration {
 @import "colors/color_picker.rasi"
 
 * {
-  font: "Iosevka FT Regular 10.5";
+  font: "Monaspace Nerd Font 10.5";
 }
 
 window {
