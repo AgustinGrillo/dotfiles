@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
+#   export EDITOR='nvim'
 # fi
 
 # Compilation flags
@@ -107,9 +107,24 @@ export EDITOR='vim'
 export PATH="$HOME/.local/bin:$PATH"
 #source "$HOME/.cargo/env"
 
+# Linux specific
+if [[ "$(uname)" == "Linux" ]]; then
+  alias bat="batcat"
+  TMUXINATOR_BIN="tmuxinator"
+fi
+
+# Macos specific
+if [[ "$(uname)" == "Darwin" ]]; then
+  # Add brew to path
+  export PATH=$PATH:/opt/homebrew/bin
+  # Aliases: macOS
+  alias ns="nightlight temp"
+  TMUXINATOR_BIN="/opt/homebrew/bin/tmuxinator"
+fi
+
 # Aliases: Vim
 alias v="nvim"
-alias v9="NVIM_APPNAME=nvim_0.9 nvim_0.9.5"
+# alias v9="NVIM_APPNAME=nvim_0.9 nvim_0.9.5"
 # Aliases: Tmux
 alias t="tmux"
 alias tl="tmux list-sessions"
@@ -117,18 +132,11 @@ alias ta="tmux attach"
 alias tn="tmux new-session -s"
 tnt() {
   local sess_name="$1"
-  /opt/homebrew/bin/tmuxinator start -p ~/Documents/config/dotfiles/.config/tmux/tmuxinator-template.yml "workspace=$(pwd)" -n "$sess_name"
+  "$TMUXINATOR_BIN" start \
+    -p ~/.config/tmuxinator/tmuxinator-template.yml \
+    "workspace=$(pwd)" \
+    -n "$sess_name"
 }
-
-# Aliases: General
-alias bat="batcat"
-
-# macoOS utils -- start
-# Add brew to path
-export PATH=$PATH:/opt/homebrew/bin
-# Aliases: macOS
-alias ns="nightlight temp"
-# macoOS utils -- end
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

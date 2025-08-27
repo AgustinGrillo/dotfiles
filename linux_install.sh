@@ -80,7 +80,7 @@ echo "Fonts installed to $FONT_DEST"
 
 echo "Symlinking dotfiles"
 mkdir ~/screensaver
-stow i3 nvim kitty tmux vim xresources zsh
+stow i3 nvim kitty tmux tmuxinator vim xresources zsh
 stow bat dunst lazygit networkmanager-dmenu nitrogen redshift rofi walls zathura general_scripts
 
 echo "Done."
