@@ -46,6 +46,8 @@ exec --no-startup-id clipit
 
 exec --no-startup-id setxkbmap -option compose:caps 
 
+exec --no-startup-id xrdb -merge ~/.Xresources
+
 # TODO:
 # Activate touchpad click
 # (https://simpleit.rocks/linux/ubuntu/activate-single-tap-touchpad-ubuntu/)
