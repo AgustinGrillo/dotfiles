@@ -1,5 +1,6 @@
 ! Resolution
-Xft.dpi: 120
+! This depends on the display resolution...
+! Xft.dpi: 120 
 
 ! special
  *.foreground:   #e3e3e3

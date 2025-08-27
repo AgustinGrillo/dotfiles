@@ -44,7 +44,8 @@ exec --no-startup-id redshift -l -36:-64 -t 5000:2500
 
 exec --no-startup-id clipit
 
-exec --no-startup-id setxkbmap -option compose:caps 
+# exec_always --no-startup-id setxkbmap -option compose:caps 
+exec_always --no-startup-id setxkbmap -option caps:super
 
 exec --no-startup-id xrdb -merge ~/.Xresources
 
