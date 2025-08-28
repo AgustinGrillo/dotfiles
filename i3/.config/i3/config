@@ -78,7 +78,7 @@ bindsym XF86MonBrightnessDown exec --no-startup-id bash -c '~/.local/bin/scripts
 # Application specific keybindings
 bindsym $mod+t exec kitty
 bindsym $mod+b exec google-chrome
-bindsym $mod+n exec nautilus
+bindsym $mod+n exec ADW_DISABLE_PORTAL=1 nautilus
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
