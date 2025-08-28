@@ -5,7 +5,7 @@ startup_window: Editor
 windows:
   - Editor: v
   - Run:
-      layout: main-vertical
+      layout: even-vertical
       panes:
         - 
         - 
