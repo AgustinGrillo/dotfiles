@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 ### Additions ###
-export EDITOR='vim'
+export EDITOR='nvim'
 export PATH="$HOME/.local/bin:$PATH"
 #source "$HOME/.cargo/env"
 
@@ -122,6 +122,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   TMUXINATOR_BIN="/opt/homebrew/bin/tmuxinator"
 fi
 
+alias y="yazi"
 # Aliases: Vim
 alias v="nvim"
 # alias v9="NVIM_APPNAME=nvim_0.9 nvim_0.9.5"
