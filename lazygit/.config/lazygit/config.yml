@@ -3,7 +3,15 @@ gui:
   nerdFontsVersion: ""
 
 git:
-  paging:
-    colorArg: never
-    pager: ydiff -p cat -s --wrap --width={{columnWidth}}
-    # pager: delta --show-syntax-themes --dark
+  pagers:
+    # Default: syntax-highlighted side-by-side diff
+    - colorArg: always
+      pager: delta --dark --syntax-theme='Catppuccin Mocha' --paging=never --side-by-side --line-numbers --hyperlinks --hyperlinks-file-link-format='lazygit-edit://{path}:{line}'
+  
+    # Full-width unified diff for added/deleted files
+    - colorArg: always
+      pager: delta --dark --syntax-theme='Catppuccin Mocha' --paging=never --line-numbers --hyperlinks --hyperlinks-file-link-format='lazygit-edit://{path}:{line}'
+
+    # - colorArg: never
+    #   pager: ydiff -p cat -s --wrap --width={{columnWidth}}
+    #   # pager: delta --show-syntax-themes --dark
